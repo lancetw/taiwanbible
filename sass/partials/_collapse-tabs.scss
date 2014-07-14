@@ -1,18 +1,41 @@
-
 .nav-tabs {
-  border-bottom: 2px solid rgba($twb-green, .3);
+  border-bottom: 1px solid $twb-main;
+  li {
+    a {
+      @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-sub, 1), rgba($twb-white, 1)) );
+    }
+  }
+  .tab-content {
+    background-color: rgba($twb-light, .5);
+    border: 1px solid $twb-main;
+  }
 }
 
-.nav-tabs > li {
-  margin-bottom: -2px;
+.tab-content {
+  background-color: rgba($twb-light, .5);
+  border: 1px solid $twb-main;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: $twb-blue;
+  border: none;
+}
+
+.panel-default {
+  border: 1px solid $twb-main;
+
+  h4 > a {
+    color: $twb-blue;
+  }
 }
 
 .panel-default > .panel-heading {
   background-color: rgba($twb-light, .5);
+  @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-sub, 1), rgba($twb-white, 1)) );
 }
 
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   background-color: rgba($twb-light, .5);
-  border-top: 2px solid rgba($twb-green, .3);
+  border-top: 2px solid $twb-main;
 }
 

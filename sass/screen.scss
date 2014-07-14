@@ -12,8 +12,8 @@
 @import "mixin";
 @import "colors";
 @import "typography";
-@import "partials/jumbotron";
 @import "layout";
+@import "partials/collapse-tabs";
 @import "partials/jumbotron";
 @import "partials/news";
 
@@ -52,9 +52,3 @@ h2 {
   color: rgba($twb-blue, .5);
   background: $twb-sub;
 }
-
-.panel-default > .panel-heading, .nav-tabs > li.active > a {
-  //background: $twb-light;
-}
-
-

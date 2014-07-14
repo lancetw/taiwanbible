@@ -1,0 +1,99 @@
+- site_title = "台灣聖經網"
+
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+-# <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+-# <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+-# <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+-# <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+%html.no-js(lang="zh-tw" class="han-biaodian-pro-cns" ng-app)
+  %head
+    -# ====================================================================
+    -# Head
+    -# ====================================================================
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    %title= "#{site_title}"
+    %meta(name="description" content="")
+    %meta(name="keywords" content="")
+    %meta(name="author" content="")
+    -# Mobile
+    -# ====================================================================
+    %meta(name="HandheldFriendly" content="True")
+    %meta(name="MobileOptimized" content="320")
+    %meta(name="viewport" content="width=device-width, initial-scale=1, minimal-ui")
+    %meta(http-equiv="cleartype" content="on")
+    -# iOS web app
+    %meta(name="apple-mobile-web-app-capable" content="yes")
+    %meta(name="apple-mobile-web-app-status-bar-style" content="black")
+    %meta(name="apple-mobile-web-app-title" content="#{site_title}")
+    -# %link{:rel => "apple-touch-startup-image", :href => "/img/touch/startup.png"}
+    -# RSS
+    -# ====================================================================
+    -# %link{:rel => "alternate", :type => "application/rss+xml", :title => "RSS", :href => "http://feeds.feedburner.com/FEEDNAME"}
+    -# Favicon
+    -# ====================================================================
+    -# iPad 3 Retina Display
+    -# %link(rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png")
+    -# iPhone 4 Retina display
+    -# %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png")
+    -# iPad non-Retina display
+    -# %link(rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png")
+    -# %link(rel="shortcut icon" href="img/touch/apple-touch-icon.png")
+    -# Non-Retina iPhone, iPod Touch, Android 2.1+
+    -# %link(rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png")
+    -# Nokia
+    -# %link(rel="shortcut icon" href="/img/touch/apple-touch-icon.png")
+    -# Tile icon for Win8 (144x144 + tile color)
+    -# %meta(name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png")
+    -# %meta(name="msapplication-TileColor" content="#222222")
+    -# CSS
+    -# ====================================================================
+    %link(rel="stylesheet" media="screen" href="css/screen.css")
+    -# %link{:rel => "stylesheet", :media => "only screen and (min-width: 45em)", :href => "/css/widescreen.css"}
+    -# IE Fixes
+    -# ====================================================================
+    -#
+    -# Use HTML5 Shim polyfill if not using Modernizr
+    -# Compiled IE stylesheets for legacy IE "Mobile first" support (using SASS)
+    -# nicolasgallagher.com/mobile-first-css-sass-and-ie/
+    -#
+    -# /[if (lt IE 9) & (!IEMobile)]
+        -# %script{:src => "//html5shim.googlecode.com/svn/trunk/html5.js"}
+        -# %script{:src => "/js/libs/selectivizr.min.js"}
+        -# %link{:rel => "stylesheet", :href => "/css/oldie.css"}
+        -# %link{:rel => "stylesheet", :href => "/css/ie8.css"}
+    -# [if (lt IE 8) & (!IEMobile)]
+        -# %link{:rel => "stylesheet", :href => "/css/ie7.css"}
+    -# [if IE 6 & (!IEMobile)]
+        -# %link{:rel => "stylesheet", :href => "/css/ie6.css"}
+    -# JS
+    -# ====================================================================
+    -# Typekit - change XXXXXXX to be your site's Typekit Kit ID
+    -# %script{:src => "http://use.typekit.com/XXXXXXX.js"}
+    -# :javascript
+        -# try{Typekit.load();}catch(e){}
+    -# Modernizr
+    %script(src="bower_components/modernizr/modernizr.js")
+  %body
+    <!--[if lt IE 8]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    -# ====================================================================
+    -# Content
+    -# ====================================================================
+    = yield
+    -# JS
+    %script(data-main="js/main" src="js/require.js")
+    -# ====================================================================
+    -# Asynchronous Google Analytics
+    -# Change UA-XXXXX-X to be your site's ID
+    -# mathiasbynens.be/notes/async-analytics-snippet
+    -#
+    :javascript
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+
+

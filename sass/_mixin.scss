@@ -1,0 +1,80 @@
+/* Scott's Dope Mixins v0.3*/
+
+
+/* A less configurable but more areodynamic transition mixin */
+@mixin trans($sec: 0.2s) {
+  -webkit-transition: all $sec ease-out;
+     -moz-transition: all $sec ease-out;
+      -ms-transition: all $sec ease-out;
+       -o-transition: all $sec ease-out;
+          transition: all $sec ease-out;
+}
+
+/* Removes margin and padding and list style from lists */
+@mixin noList {
+  padding: 0;
+  margin: 0;
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+/* Lightens background color on hover */
+@mixin hovLight ($color) {
+    background: $color;
+    &:hover {
+        background: $color + 30;
+    }
+}
+
+/* Darkens background color on hover */
+@mixin hovDark ($color) {
+    background: $color;
+    &:hover {
+        background: $color - 30;
+    }
+}
+
+
+/* A re-useable font mixin for whatever fonts you are using, allows for an optional color argument */
+@mixin serif($size, $color:"") {
+    color: $color;
+    font: italic normal $size 'Droid Serif';
+}
+
+/* Cross browser opacity */
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+
+/* REMS with a PX Fallback */
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+
+
+/* REQUIRES COMPASS */
+
+/* Faster gradients, if a stop is not specified a -20 of the start
+is assigned for you this may be adjustable in the near future */
+@mixin gradient($start, $stop:false) {
+    @if $stop {
+        @include background-image(linear-gradient($start, $stop));
+    } @else {
+        @include background-image(linear-gradient($start, $start - 20));
+    }
+
+}

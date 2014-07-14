@@ -1,0 +1,29 @@
+
+ul.nav, ul.dropdown-menu {
+  padding-left: 0 !important;
+}
+
+ul.nav > li > a {
+  text-overflow : ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.more {
+  text-align: right;
+}
+
+.tab-content {
+  padding: 12px;
+}
+
+.tab-content img, .panel-body img {
+  float: right;
+  padding: 0 0 0 12px;
+}
+
+.panel-title > a {
+    display: block;
+    padding: 10px 15px;
+    margin: -10px -15px;
+}

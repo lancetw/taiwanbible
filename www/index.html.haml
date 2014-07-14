@@ -1,0 +1,110 @@
+.page
+  .container
+    .jumbotron
+      .twb-header
+        .twb-title
+          %img(src="img/logo/twbible.png")
+          .twb-http TaiwanBible.com
+        %h1 台灣聖經網
+        .twb-donate
+          .btn.btn-primary.btn-lg 參與奉獻
+      %form(role="search")
+        .input-group
+          %input.form-control(type="input" placeholder="智慧型聖經搜尋")
+          %span.input-group-btn
+            %button.btn.btn-warning(type="button") 搜尋
+            %button.btn.btn-warning.dropdown-toggle(type="button" data-toggle="dropdown")
+              %span.caret
+              %span.sr-only Toggle Dropdown
+            %ul.dropdown-menu(role="menu" lang="en")
+              %li
+                %a(href="#") 聖經
+              %li
+                %a(href="#") 知識
+              %li
+                %a(href="#") 辭典
+              %li
+                %a(href="#") 詩歌
+              %li
+                %a(href="#") 新聞
+              %li
+                %a(href="#") 網站
+              %li
+                %a(href="#") 好友
+              %li.divider
+              %li
+                %a(href="#") 更多⋯
+
+    #breaknews
+      %ul.nav.nav-pills.nav-stacked
+        %li.active
+          %a(href="#") 《穿越時空看聖經》　市井小民也能讀懂聖經
+        %li
+          %a(href="#")  貴格會合一堂 社區課程熱門
+        %li
+          %a(href="#")  猶太人與基督信徒關係今優於昔
+        %li
+          %a(href="#")  父職缺席世代必讀的書－《男子漢大丈夫》
+        %li
+          %a(href="#" )  正確因應暴力攻擊 保障人身安全
+
+
+    #content
+      %article.news
+        %header
+          %h2
+            %a(href="#") 《穿越時空看聖經》　市井小民也能讀懂聖經
+        .news
+          %p 聖經是基督徒必讀的書，但從舊約到新約，貫穿的歷史年份和背景故事，令許多弟兄姊妹看⋯
+
+        .more
+          %a(href="#") 更多基督教新聞
+
+    #info
+      %ul.nav.nav-tabs.responsive#twbTab
+        %li
+          %a(href="#site" role="tab" data-toggle="tab") 網站新聞
+        %li
+          %a(href="#gift" role="tab" data-toggle="tab") 靈糧中心
+        %li
+          %a(href="#special" role="tab" data-toggle="tab") 專題推薦
+        %li
+          %a(href="#books" role="tab" data-toggle="tab") 每周一書
+
+      .tab-content.responsive
+        .tab-pane.fade.in#site
+          %img(src="http://placehold.it/100x80")
+          %h2 台灣聖經網夏季讀書會
+          %p 為鼓勵網友們多閱讀，台灣聖經網夏季讀書會開跑了喔! 聖經網每季會推出五本基督教書籍，供會員用靈糧點數兌換。點數比照靈糧點數中心其他書籍。 (每種書限量3本，共15本)。會員在兌換後兩個月內，如能寄回一篇超過500字以上的讀書心得，台灣聖經網將會返回當初所兌換50%的點數。
+        .tab-pane.fade#gift
+          %img(src="http://placehold.it/100x80")
+          %h2 最寶貴的禮物（約翰福音單本）
+          %p 把這份最棒的禮物送給任何你遇見的人吧！這本美麗的約翰福音書內容包含全本的約翰福音經文（和合本修訂本），以及如何成為一個基督徒的相關資訊。
+        .tab-pane.fade#special
+          %img(src="http://placehold.it/100x80")
+          %h2 基督徒站長工具箱
+          %p 基督徒站長工具箱由中華基督教網路發展協會負責，提供各式基督教相關的站長工具。讓所有基督徒站長們，在不用寫程式、不用管理資料庫、不用專業知識背景的前提下，就可以輕鬆的在您的網站 (或部落格) 放入各式基督教工具。並且這裡所有的服務，全部是免費的! 歡迎大家多加利用!
+        .tab-pane.fade#books
+          %img(src="http://placehold.it/100x80")
+          %h2 耶穌比宗教大
+          %p 如果宗教這麼偉大，為什麼它引發了這麼多戰爭？它能蓋巨型教堂，為什麼卻無法餵養窮人？你追隨的是真實的耶穌，還是被發明出來的耶穌？如果你曾對宗教抱有懷疑、不解，甚至失望，把宗教說的先放一邊，聽聽耶穌是怎麼說的！
+    .sidebar
+      #nav
+        %ul
+          %li 靈修
+          %li 塗鴉牆
+          %li 聖經閱讀
+
+      %section
+        %form
+
+      %section
+        .is-text
+
+      %section
+        .sample
+
+    %footer
+      #copyright
+        %p
+          台灣聖經網．2014

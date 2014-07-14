@@ -1,0 +1,33 @@
+{
+  "name": "Han",
+  "version": "2.3.0",
+  "homepage": "http://css.hanzi.co/",
+  "authors": [
+    "ethantw <ethantw@me.com>"
+  ],
+  "description": "The CSS typography framework optimised for Hanzi.",
+  "main": "han.css",
+  "keywords": [
+    "css",
+    "han",
+    "normalize",
+    "typography"
+  ],
+  "license": "http://css.hanzi.co/license.md",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "_release": "2.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.3.0",
+    "commit": "fc7d199a4931457842662587f239e6ba9490b245"
+  },
+  "_source": "git://github.com/ethantw/Han.git",
+  "_target": "~2.3.0",
+  "_originalSource": "Han",
+  "_direct": true
+}

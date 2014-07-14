@@ -1,0 +1,13 @@
+// Requirements
+// ============
+
+@import "susy";
+
+// mobile-first
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);

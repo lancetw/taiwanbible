@@ -84,8 +84,11 @@ define(['bootstrap-responsive-tabs'], function() {
 
   $('#infoTab a, #topicTab a').click(function (e) {
     e.preventDefault()
-    $(this).tab('show')
+    $('#infoTab a, #topicTab a').removeClass('active');
+    $(this).tab('show');
   });
+
+  $('#infoTab, #topicTab').collapse();
 
   (function() {
     fakewaffle.responsiveTabs(['xs', 'sm']);

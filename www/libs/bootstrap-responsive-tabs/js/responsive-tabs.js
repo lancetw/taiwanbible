@@ -26,13 +26,18 @@ fakewaffle.responsiveTabs = function (collapseDisplayed) {
                 "id"    : 'collapse-' + $tabGroup.attr('id')
             });
 
-        $.each(tabs, function () {
+        $.each(tabs, function (ind, val) {
             var $this          = $(this),
                 active         = '',
+                collapsed      = '',
                 oldLinkClass   = $this.attr('class') === undefined ? '' : $this.attr('class'),
                 newLinkClass   = 'accordion-toggle',
                 oldParentClass = $this.parent().attr('class') === undefined ? '' : $this.parent().attr('class'),
                 newParentClass = 'panel panel-default';
+
+            if (ind > 0) {
+              collapsed = ' collapsed';
+            }
 
             if (oldLinkClass.length > 0) {
                 newLinkClass += ' ' + oldLinkClass;
@@ -54,7 +59,7 @@ fakewaffle.responsiveTabs = function (collapseDisplayed) {
                     $('<div>').attr('class', 'panel-heading').html(
                         $('<h4>').attr('class', 'panel-title').html(
                             $('<a>', {
-                                'class' : newLinkClass,
+                                'class' : newLinkClass + collapsed,
                                 'data-toggle': 'collapse',
                                 'data-parent' : '#collapse-' + $tabGroup.attr('id'),
                                 'href' : '#collapse-' + $this.attr('href').replace(/#/g, ''),

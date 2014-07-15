@@ -7,7 +7,11 @@
   }
   .panel-heading {
     border: none;
-    @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-sub, 1), rgba($twb-white, 1)) );
+    @include background( linear-gradient(top, rgba($twb-white, 1), rgba($twb-sub, 1)) );
+
+    &.active {
+      @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-sub, 1), rgba($twb-white, .5)) );
+    }
   }
 
   .tab-content {
@@ -21,13 +25,27 @@
   }
 }
 
+.panel-heading .accordion-toggle:after {
+  font-family: FontAwesome;
+  content: "\f107";
+  float: right;
+  color: $twb-blue;
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+  font-family: FontAwesome;
+  content: "\f105";
+  float: right;
+  color: $twb-blue;
+}
+
 // Desktop
 
 .nav-tabs {
-  border-bottom: 1px solid $twb-main;
+  border-bottom: none;
   li {
     a {
-      @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-sub, 1), rgba($twb-white, 1)) );
+      @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-sub, 1), rgba($twb-white, .5)) );
     }
     a:hover, a:focus {
       color: $twb-blue;
@@ -37,19 +55,21 @@
       a {
         font-weight: bold;
         color: $twb-blue;
-        border: 1px solid rgba($twb-light, .5);
+        border: none;
         border-bottom: 1px solid rgba($twb-white, 1);
       }
       a:hover, a:focus {
         color: $twb-blue;
-        border: 1px solid rgba($twb-light, .5);
-        border-bottom: 1px solid rgba($twb-white, 1);
-        @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-sub, 1), rgba($twb-white, 1)) );
+        border: 1px solid rgba($twb-white, .5);
+        border-bottom: 1px solid rgba($twb-white, .5);
+        @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-sub, 1), rgba($twb-white, .5)) );
       }
     }
   }
-  .tab-content {
-    background: rgba($twb-light, .5);
-    border: 1px solid $twb-main;
-  }
+}
+
+.tab-content {
+  background: rgba($twb-white, .5);
+  border: 1px solid $twb-main;
+  margin-bottom: 24px;
 }

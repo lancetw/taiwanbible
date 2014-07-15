@@ -11,6 +11,7 @@
   @include susy-breakpoint($wide-desktop-bp, $wide-desktop) {
     @include container(1440px);
   }
+
 }
 
 header, footer {
@@ -21,17 +22,19 @@ header, footer {
 }
 
 aside.left, main, aside.right {
-  @include trans(.3s);
+  @include transition (all 330ms ease-in-out);
 }
 
 aside.left {
   @include span($mobile-columns);
   margin-left: -100%;
-  .show-left & { margin-left: 0; }
-
+  .show-left & {
+    margin-left: 0;
+  }
 }
 
 main {
+  @include transform(rotate3d(0, 0, 0, 0));
   @include span($mobile-columns);
   margin-right: -100%;
   .show-right & { margin-left: -100%; }
@@ -40,7 +43,9 @@ main {
 aside.right {
   @include span($mobile-columns last);
   margin-right: -100%;
-  .show-right & { margin-right: 0; }
+  .show-right & {
+    margin-right: 0;
+  }
 }
 
 // Tablet
@@ -101,7 +106,7 @@ aside.right {
 
 // layout
 
-ul.nav, ul.dropdown-menu {
+ul {
   padding-left: 0 !important;
 }
 

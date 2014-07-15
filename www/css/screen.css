@@ -8909,6 +8909,11 @@ h2 {
   line-height: 26px;
 }
 
+.panel-default h4 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
 p {
   text-align: justify;
   text-justify: inter-ideograph;
@@ -8999,11 +9004,9 @@ header:after, footer:after {
 }
 
 aside.left, main, aside.right {
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 330ms ease-in-out;
+  -o-transition: all 330ms ease-in-out;
+  transition: all 330ms ease-in-out;
 }
 
 aside.left {
@@ -9018,6 +9021,10 @@ aside.left {
 }
 
 main {
+  -moz-transform: rotate3d(0, 0, 0, 0);
+  -ms-transform: rotate3d(0, 0, 0, 0);
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
   width: 100%;
   float: left;
   padding-left: 1.3888888889%;
@@ -9134,7 +9141,7 @@ aside.right {
     padding-right: 0.8333333333%;
   }
 }
-ul.nav, ul.dropdown-menu {
+ul {
   padding-left: 0 !important;
 }
 
@@ -9304,9 +9311,10 @@ footer #copyright p {
   *zoom: 1;
   *display: inline;
 }
-.toogle a {
+.toogle a, .toogle a:active, .toogle a:hover {
   font-size: 38px;
   font-size: 2.375rem;
+  color: rgba(3, 106, 165, 0.8);
 }
 .toogle a.btn.btn-default {
   border: none;
@@ -9334,19 +9342,30 @@ ul.user-panel {
   padding: 0;
   margin: 0;
   border: 5px solid #96d9f8;
-  padding: 12px;
+  font-size: 26px;
+  font-size: 1.625rem;
+  padding-bottom: 12px;
 }
 ul.user-panel li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+ul.user-panel li {
+  padding: 0 12px;
+}
+ul.user-panel h2 {
+  padding-left: 12px;
+  padding-top: 6px;
+  font-size: 32px;
+  font-size: 2rem;
+}
 
 #twb-nav {
   padding: 0;
   margin: 0;
-  padding-left: 1.8518518519%;
-  padding-right: 1.8518518519%;
+  padding-left: 1.3888888889%;
+  padding-right: 1.3888888889%;
   margin-left: 5%;
 }
 #twb-nav li {
@@ -9426,6 +9445,8 @@ h2 {
 
 body {
   color: #1b3b55;
+  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 a {

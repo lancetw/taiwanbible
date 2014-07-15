@@ -4,6 +4,10 @@ h2 {
   line-height: 26px;
 }
 
+.panel-default h4 {
+  @include font-size(32px);
+}
+
 p {
   text-align: justify;
   text-justify: inter-ideograph;

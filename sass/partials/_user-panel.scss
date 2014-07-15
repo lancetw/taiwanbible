@@ -1,5 +1,17 @@
 ul.user-panel {
   @include noList;
   border: 5px solid $twb-main;
-  padding: 12px;
+  @include font-size(26px);
+  padding-bottom: 12px;
+
+  li {
+    padding: 0 12px;
+  }
+
+  h2 {
+    padding-left: 12px;
+    padding-top: 6px;
+    @include font-size(32px);
+  }
+
 }

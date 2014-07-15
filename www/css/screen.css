@@ -9119,6 +9119,12 @@ aside.right {
     padding-left: 0.8333333333%;
     padding-right: 0.8333333333%;
   }
+  .show-right main {
+    width: 50%;
+    float: left;
+    padding-left: 0.8333333333%;
+    padding-right: 0.8333333333%;
+  }
 
   aside.right {
     margin-right: 0;

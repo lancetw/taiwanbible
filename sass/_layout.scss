@@ -88,6 +88,9 @@ aside.right {
   }
   main {
     @include span(6);
+    .show-right & {
+      @include span(6);
+    }
   }
   aside.right {
     margin-right: 0;

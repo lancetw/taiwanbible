@@ -1,10 +1,37 @@
 h2 {
   margin-top: 0;
-  font-size: 18px;
+  @include font-size(36px);
   line-height: 26px;
 }
 
 p {
   text-align: justify;
   text-justify: inter-ideograph;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  width: 101%;
+  height: 200px;
+  overflow: scroll;
+
+  sup {
+    writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb;
+  }
+}
+
+i.icon {
+  text-decoration: none;
+  border: 0;
+  padding: 0;
+}
+
+blockquote {
+
+}
+blockquote :not(:lang(zh)),
+html.han-biaodian-pro-cns blockquote :not(:lang(zh)) {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

@@ -3,9 +3,10 @@
 // ======
 
 @import "grids";
+@import "breakpoint";
+@import "media-queries";
 @import "compass";
-//@import "../www/bower_components/normalize-scss/normalize";
-@import "../www/bower_components/Han/sass/han";
+@import "../www/libs/Han/sass/han";
 @import "bootstrap";
 @import "misc/bootstrap-tabs";
 @import "vars";
@@ -13,17 +14,28 @@
 @import "colors";
 @import "typography";
 @import "layout";
-@import "partials/collapse-tabs";
 @import "partials/jumbotron";
 @import "partials/news";
+@import "partials/collapse-tabs";
+@import "partials/footer";
+@import "partials/toggle";
+@import "partials/user-panel";
+@import "partials/twb-nav";
+@import "partials/panel";
+@import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css";
 
-$base-font-size: 16px;
-$base-line-height: 24px;
+$base-font-size: 20px;
+$base-line-height: 36px;
+$round-to-nearest-half-line: true;
+$rhythm-unit: "rem";
 
 html, body {
   width: 100%;
   height: 100%;
+}
 
+h2 {
+  color: $twb-green;
 }
 
 body {
@@ -38,17 +50,4 @@ a {
 
 .page {
   @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-white, 1), rgba($twb-sub, 1)) );
-}
-
-.container {
-  @include container(960px);
-}
-
-h2 {
-  color: $twb-green;
-}
-
-.nav > li > a:hover, .nav > li > a:focus {
-  color: rgba($twb-blue, .5);
-  background: $twb-sub;
 }

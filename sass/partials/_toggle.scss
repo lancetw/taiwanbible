@@ -1,0 +1,32 @@
+.toogle {
+  z-index: 32767;
+  position: fixed;
+  @include inline-block;
+
+  a {
+    @include font-size(38px);
+  }
+
+  a.btn.btn-default {
+    border: none;
+    border-radius: 0;
+    background: rgba($twb-white, .5);
+  }
+  &.left {
+    top: 12px;
+    left: 0;
+    a.btn.btn-default {
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+  }
+  &.right {
+    top: 12px;
+    right: 0;
+    a.btn.btn-default {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+  }
+
+}

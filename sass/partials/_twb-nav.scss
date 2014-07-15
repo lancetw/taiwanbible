@@ -1,0 +1,48 @@
+#twb-nav {
+  @include noList;
+  @include with-layout(2) {
+    @include gutters(3);
+    @include pre(5%);
+
+    ul {
+      @include font-size(28px);
+      &.first {
+        @include span(1);
+
+      }
+      &.second {
+        @include span(1 last);
+      }
+
+      li {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include susy-breakpoint($tablet-bp, 1) {
+    ul {
+      &.first {
+        @include span(1 last);
+
+      }
+      &.second {
+        @include span(1 last);
+      }
+    }
+  }
+
+  @include susy-breakpoint($desktop-bp, 2) {
+    ul {
+      @include font-size(28px);
+      &.first {
+        @include span(1);
+
+      }
+      &.second {
+        @include span(1 last);
+      }
+    }
+  }
+
+}

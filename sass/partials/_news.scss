@@ -1,3 +1,8 @@
 article.news {
   padding: 12px;
 }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  color: rgba($twb-blue, .9);
+  background: rgba($twb-sub, .8);
+}

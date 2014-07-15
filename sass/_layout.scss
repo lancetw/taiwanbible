@@ -1,3 +1,102 @@
+#container {
+  @include container;
+  overflow: hidden;
+
+  @include susy-breakpoint($tablet-bp, $tablet) {
+    @include container;
+  }
+  @include susy-breakpoint($desktop-bp, $desktop) {
+    @include container;
+  }
+  @include susy-breakpoint($wide-desktop-bp, $wide-desktop) {
+    @include container(1440px);
+  }
+}
+
+header, footer {
+  @include clearfix;
+  clear: both;
+  min-height: 3em;
+  padding: 1em;
+}
+
+aside.left, main, aside.right {
+  @include trans(.3s);
+}
+
+aside.left {
+  @include span($mobile-columns);
+  margin-left: -100%;
+  .show-left & { margin-left: 0; }
+
+}
+
+main {
+  @include span($mobile-columns);
+  margin-right: -100%;
+  .show-right & { margin-left: -100%; }
+}
+
+aside.right {
+  @include span($mobile-columns last);
+  margin-right: -100%;
+  .show-right & { margin-right: 0; }
+}
+
+// Tablet
+
+@include susy-breakpoint($tablet-bp, $tablet) {
+
+  [href="#left"] { visibility: hidden; }
+
+  aside.left {
+    @include span(2);
+    margin-left: 0;
+    .show-right & { margin-left: - 100%; }
+  }
+  main {
+    @include span(6);
+    .show-right & {
+      margin-left: 0;
+      @include span(5);
+      @include ipad(landscape) {
+        @include span(4);
+      }
+    }
+  }
+  aside.right {
+    @include span(3 last);
+    .show-right & {
+      margin-right: 0;
+      @include ipad(landscape) {
+        @include span(2 last);
+      }
+    }
+  }
+
+}
+
+// Desktop
+
+@include susy-breakpoint($desktop-bp, $desktop) {
+
+  [href="#right"] { visibility: hidden; }
+
+  aside.left {
+    @include span(3);
+    .show-right & { margin-left: 0; }
+  }
+  main {
+    @include span(6);
+  }
+  aside.right {
+    margin-right: 0;
+    @include span(3 last);
+  }
+}
+
+
+// layout
 
 ul.nav, ul.dropdown-menu {
   padding-left: 0 !important;
@@ -19,11 +118,19 @@ ul.nav > li > a {
 
 .tab-content img, .panel-body img {
   float: right;
-  padding: 0 0 0 12px;
+  padding: 0 0 0 15px;
 }
 
 .panel-title > a {
     display: block;
     padding: 10px 15px;
     margin: -10px -15px;
+}
+
+#imgroll-box {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

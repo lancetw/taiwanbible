@@ -3,7 +3,7 @@
   @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-main, .8), rgba($twb-sub, 1)) );
 
   h1 {
-    font-size: 28px;
+    @include font-size(64px);
     letter-spacing: 10px;
     margin: 0;
     padding: 0;
@@ -21,13 +21,23 @@
   }
 
   .twb-http {
+    color: rgba($twb-blue, .5);
     margin-top: -20px;
-    font-size: 15px;
+    @include font-size(24px);
   }
 
   .twb-donate {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-
 }
+
+.jumbotron > form[role='search'] {
+  @include susy-breakpoint($desktop-bp, $desktop) {
+    margin: 0 auto;
+    width: 42%;
+  }
+}
+
+
+

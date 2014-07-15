@@ -1,4 +1,4 @@
-bowerUrl = '../../bower_components';
+bowerUrl = '../../libs';
 
 require.config({
   baseUrl: 'js/app',
@@ -17,6 +17,7 @@ require.config({
     'bootstrap-transition': bowerUrl + '/bootstrap-sass/js/transition',
     'bootstrap-collapse': bowerUrl + '/bootstrap-sass/js/collapse',
     'bootstrap-responsive-tabs': '../../libs/bootstrap-responsive-tabs/js/responsive-tabs',
+    'bootstrap-scrollspy': '/bootstrap-sass/js/scrollspy',
   },
   shim:{
     'underscore': { exports: '_' },
@@ -32,6 +33,7 @@ require.config({
     'bootstrap-transition': { deps: ['jquery'] },
     'bootstrap-collapse': { deps: ['jquery', 'bootstrap-transition'] },
     'bootstrap-responsive-tabs': { deps: ['bootstrap-tab', 'bootstrap-collapse'] },
+    'bootstrap-scrollspy': { deps: ['jquery'] },
   },
   map:{
   },
@@ -61,7 +63,11 @@ require([
   'bootstrap-tab',
   'bootstrap-transition',
   'bootstrap-collapse',
+  'bootstrap-scrollspy',
   '../helpers/safari_standalone',
+  '../helpers/ios7_workaround',
+  'nav',
+
 ],function(angular) {
   'use strict';
   angular.element().ready(function() {
@@ -73,11 +79,10 @@ require([
   }, false);
 });
 
-
 define(['bootstrap-responsive-tabs'], function() {
-  $('#twbTab a:first').tab('show');
+  $('#infoTab a:first, #topicTab a:first').tab('show');
 
-  $('#twbTab a').click(function (e) {
+  $('#infoTab a, #topicTab a').click(function (e) {
     e.preventDefault()
     $(this).tab('show')
   });
@@ -88,8 +93,4 @@ define(['bootstrap-responsive-tabs'], function() {
 });
 
 
-// define(['jquery'], function() {
-//   $(function() {
-//     $('body').css('font-size', '10px');
-//   });
-// });
+

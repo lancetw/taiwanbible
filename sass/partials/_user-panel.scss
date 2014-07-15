@@ -1,0 +1,5 @@
+ul.user-panel {
+  @include noList;
+  border: 5px solid $twb-main;
+  padding: 12px;
+}

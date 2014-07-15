@@ -3,11 +3,30 @@
 
 @import "susy";
 
+$mobile-columns: 4;
+$tablet-columns: 8;
+$desktop-columns: 12;
+
+$tablet-bp: 740px;
+$tablet: layout(8 1/4 inside);
+
+$desktop-bp: 980px;
+$desktop: layout(12 1/4 inside);
+
+$wide-desktop-bp: 1330px;
+$wide-desktop: layout(12 1/4 inside);
+
 // mobile-first
 $susy: (
-  columns: 12,
-  gutters: 1/4,
+  columns: $mobile-columns,
+  gutters: 1/8,
   math: fluid,
   output: float,
   gutter-position: inside,
+  global-box-sizing: border-box,
+
+  use-custom: (
+    rem: true,
+  )
 );
+

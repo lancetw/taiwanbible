@@ -22,10 +22,11 @@ header, footer {
 }
 
 aside.left, main, aside.right {
-  @include transition (all 330ms ease-in-out);
+  @include transition (all 200ms ease-in-out);
 }
 
 aside.left {
+  @include transform(rotate3d(0, 0, 0, 0));
   @include span($mobile-columns);
   margin-left: -100%;
   .show-left & {
@@ -41,6 +42,7 @@ main {
 }
 
 aside.right {
+  @include transform(rotate3d(0, 0, 0, 0));
   @include span($mobile-columns last);
   margin-right: -100%;
   .show-right & {

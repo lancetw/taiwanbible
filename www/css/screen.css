@@ -9004,12 +9004,16 @@ header:after, footer:after {
 }
 
 aside.left, main, aside.right {
-  -webkit-transition: all 330ms ease-in-out;
-  -o-transition: all 330ms ease-in-out;
-  transition: all 330ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 aside.left {
+  -moz-transform: rotate3d(0, 0, 0, 0);
+  -ms-transform: rotate3d(0, 0, 0, 0);
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
   width: 100%;
   float: left;
   padding-left: 1.3888888889%;
@@ -9036,6 +9040,10 @@ main {
 }
 
 aside.right {
+  -moz-transform: rotate3d(0, 0, 0, 0);
+  -ms-transform: rotate3d(0, 0, 0, 0);
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
   width: 100%;
   float: right;
   padding-left: 1.3888888889%;

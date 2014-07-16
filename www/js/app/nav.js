@@ -2,10 +2,10 @@ require(['jquery'], function() {
 
   $(function() {
     $('a[href="#left"]').click(function() {
-      toggleNav('left');
+      toggleNav('left', $(this));
     });
     $('a[href="#right"]').click(function() {
-      toggleNav('right');
+      toggleNav('right', $(this));
     });
   });
 
@@ -18,11 +18,27 @@ require(['jquery'], function() {
     }
   }
 
-  function toggleNav(direct) {
+  function toggleNav(direct, _this) {
     if ($('#wrapper').hasClass('show-' + direct)) {
       $('#wrapper').removeClass('show-' + direct);
+      if (direct == 'left') {
+        _this.removeClass('fa-chevron-left').addClass('fa-bars');
+        $('a[href="#right"]').show('fast');
+      }
+      if (direct == 'right') {
+        _this.removeClass('fa-chevron-right').addClass('fa-plus-square');
+        $('a[href="#left"]').show('fast');
+      }
     } else {
       $('#wrapper').addClass('show-' + direct);
+      if (direct == 'left') {
+        _this.removeClass('fa-bars').addClass('fa-chevron-left');
+        $('a[href="#right"]').hide('fast');
+      }
+      if (direct == 'right') {
+        _this.removeClass('fa-plus-square').addClass('fa-chevron-right');
+        $('a[href="#left"]').hide('fast');
+      }
     }
     if ($('#wrapper').hasClass('show-' + _reverse(direct))) {
       $('#wrapper').removeClass('show-' + _reverse(direct));

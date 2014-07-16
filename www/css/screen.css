@@ -9060,7 +9060,7 @@ aside.right {
   }
 
   aside.left {
-    width: 25%;
+    width: 37.5%;
     float: left;
     padding-left: 1.25%;
     padding-right: 1.25%;
@@ -9071,7 +9071,7 @@ aside.right {
   }
 
   main {
-    width: 75%;
+    width: 62.5%;
     float: left;
     padding-left: 1.25%;
     padding-right: 1.25%;
@@ -9402,16 +9402,16 @@ ul.user-panel h2 {
 }
 @media (min-width: 740px) {
   #twb-nav ul.first {
-    width: 100%;
-    float: right;
-    padding-left: 5.5555555556%;
-    padding-right: 5.5555555556%;
+    width: 50%;
+    float: left;
+    padding-left: 2.7777777778%;
+    padding-right: 2.7777777778%;
   }
   #twb-nav ul.second {
-    width: 100%;
+    width: 50%;
     float: right;
-    padding-left: 5.5555555556%;
-    padding-right: 5.5555555556%;
+    padding-left: 2.7777777778%;
+    padding-right: 2.7777777778%;
   }
 }
 @media (min-width: 980px) {

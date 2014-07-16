@@ -20,10 +20,10 @@
     }
   }
 
-  @include susy-breakpoint($tablet-bp, 1) {
+  @include susy-breakpoint($tablet-bp, 2) {
     ul {
       &.first {
-        @include span(1 last);
+        @include span(1);
 
       }
       &.second {

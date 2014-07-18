@@ -1,0 +1,6 @@
+#game-quiz {
+  div.response {
+    text-align: center;
+    @include font-size(36px);
+  }
+}

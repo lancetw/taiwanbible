@@ -1,0 +1,52 @@
+- content_for(:title, '金頭腦')
+
+#game-quiz
+  .layout
+    %h2 本日「經」頭腦問題
+
+    .panel.panel-default
+      .panel-heading.panel-info
+        約瑟曾為誰解夢？
+      .panel-body
+        以上皆是
+      .panel-footer
+        %div.response
+          %span.label.label-success 恭喜您答對了！
+
+    %table.table.table-striped.paper
+      %thead
+        %th 選項
+        %th
+          %span.fa.fa-child
+        %th
+          %span.fa.fa-dot-circle-o
+        %th
+          %span.fa.fa-users
+      %tbody
+        %tr
+          %td 酒政
+          %td
+          %td
+          %td 0
+        %tr
+          %td 膳長
+          %td
+          %td
+          %td 2
+        %tr
+          %td 法老
+          %td
+          %td
+          %td 2
+        %tr
+          %td 以上皆是
+          %td
+            %span.fa.fa-check-square-o
+          %td
+            %span.fa.fa-check-circle
+          %td 135
+
+    %div.center
+      %a.btn.btn-primary.btn-lg(href="#") 不懂為什麼? 去知識庫發問吧
+
+

@@ -1,9 +1,11 @@
 .jumbotron {
+  margin-bottom: 0;
+
   background: none;
   @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-main, .8), rgba($twb-sub, 1)) );
 
   h1 {
-    @include font-size(64px);
+    @include font-size(56px);
     letter-spacing: 10px;
     margin: 0;
     padding: 0;

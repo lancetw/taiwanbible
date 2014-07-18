@@ -1,0 +1,70 @@
+- site_title = "台灣聖經網行動版"
+-# ====================================================================
+-# Head
+-# ====================================================================
+%meta(charset="utf-8")
+%meta(http-equiv="X-UA-Compatible" content="IE=edge")
+%title= "#{site_title}"
+%meta(name="description" content="這是一個基督教的社群網站，包含個人化讀經、靈修、聖經知識、全網查經、禱告廣場、見證、金句、詩歌、聖經部落格、社群、基督教新聞、活動、聖經遊戲、軟體下載、信徒線上工具等等...")
+%meta(name="keywords" content="")
+%meta(name="author" content="")
+-# Mobile
+-# ====================================================================
+%meta(name="HandheldFriendly" content="True")
+%meta(name="MobileOptimized" content="320")
+%meta(name="viewport" content="width=device-width, initial-scale=1, minimal-ui")
+%meta(http-equiv="cleartype" content="on")
+-# iOS web app
+%meta(name="apple-mobile-web-app-capable" content="yes")
+%meta(name="apple-mobile-web-app-status-bar-style" content="black")
+%meta(name="apple-mobile-web-app-title" content="#{site_title}")
+-# %link{:rel => "apple-touch-startup-image", :href => "/img/touch/startup.png"}
+-# RSS
+-# ====================================================================
+-# %link{:rel => "alternate", :type => "application/rss+xml", :title => "RSS", :href => "http://feeds.feedburner.com/FEEDNAME"}
+-# Favicon
+-# ====================================================================
+-# iPad 3 Retina Display
+-# %link(rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png")
+-# iPhone 4 Retina display
+-# %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png")
+-# iPad non-Retina display
+-# %link(rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png")
+-# %link(rel="shortcut icon" href="img/touch/apple-touch-icon.png")
+-# Non-Retina iPhone, iPod Touch, Android 2.1+
+-# %link(rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png")
+-# Nokia
+-# %link(rel="shortcut icon" href="/img/touch/apple-touch-icon.png")
+-# Tile icon for Win8 (144x144 + tile color)
+-# %meta(name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png")
+-# %meta(name="msapplication-TileColor" content="#222222")
+-# SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page
+%link(rel="canonical" href="http://www.taiwanbible.com/")
+-# CSS
+-# ====================================================================
+%link(rel="stylesheet" media="screen" href="/css/screen.css")
+-# %link{:rel => "stylesheet", :media => "only screen and (min-width: 45em)", :href => "/css/widescreen.css"}
+-# IE Fixes
+-# ====================================================================
+-#
+-# Use HTML5 Shim polyfill if not using Modernizr
+-# Compiled IE stylesheets for legacy IE "Mobile first" support (using SASS)
+-# nicolasgallagher.com/mobile-first-css-sass-and-ie/
+-#
+-# /[if (lt IE 9) & (!IEMobile)]
+-# %script{:src => "//html5shim.googlecode.com/svn/trunk/html5.js"}
+-# %script{:src => "/js/libs/selectivizr.min.js"}
+-# %link{:rel => "stylesheet", :href => "/css/oldie.css"}
+-# %link{:rel => "stylesheet", :href => "/css/ie8.css"}
+-# [if (lt IE 8) & (!IEMobile)]
+-# %link{:rel => "stylesheet", :href => "/css/ie7.css"}
+-# [if IE 6 & (!IEMobile)]
+-# %link{:rel => "stylesheet", :href => "/css/ie6.css"}
+-# JS
+-# ====================================================================
+-# Typekit - change XXXXXXX to be your site's Typekit Kit ID
+-# %script{:src => "http://use.typekit.com/XXXXXXX.js"}
+-# :javascript
+-# try{Typekit.load();}catch(e){}
+-# Modernizr
+%script(src="/libs/modernizr/modernizr.js")

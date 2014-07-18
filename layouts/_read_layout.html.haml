@@ -1,0 +1,19 @@
+!!! 5
+= render :partial => "/templates/iehack"
+%html.no-js(lang="zh-tw" ng-app)
+  %head
+    %title= yield(:title)
+    = render :partial => "/templates/head"
+  %body
+    = render :partial => "/templates/noie"
+    #wrapper.page
+      #container.bible.with-paper
+        = render :partial => "/templates/menu"
+        /= render :partial => "/templates/header"
+        = render :partial => "/templates/sidebar"
+        %main
+          = yield
+        %aside.right(name="right")
+          = render :partial => "/templates/chapter_list"
+    = render :partial => "/templates/footer"
+    = render :partial => "/templates/script"

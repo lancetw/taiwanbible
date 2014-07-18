@@ -6,14 +6,15 @@
 @import "breakpoint";
 @import "media-queries";
 @import "compass";
-@import "../www/libs/Han/sass/han";
-@import "bootstrap";
-@import "misc/bootstrap-tabs";
+//@import "bootstrap";
+@import "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css";
 @import "vars";
 @import "mixin";
 @import "colors";
 @import "typography";
 @import "layout";
+@import "misc/bootstrap-tabs";
+@import "misc/paper";
 @import "partials/jumbotron";
 @import "partials/news";
 @import "partials/collapse-tabs";
@@ -22,6 +23,9 @@
 @import "partials/user-panel";
 @import "partials/twb-nav";
 @import "partials/panel";
+@import "bible";
+@import "game-quiz";
+
 @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css";
 
 $base-font-size: 20px;
@@ -50,5 +54,9 @@ a {
 }
 
 .page {
-  @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-white, 1), rgba($twb-sub, 1)) );
+  min-width: 290px;
+  overflow: hidden;
+  background: $twb-sub;
+  padding-bottom: 20px;
+  //@include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-white, 1), rgba($twb-sub, 1)) );
 }

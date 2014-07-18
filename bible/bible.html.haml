@@ -1,0 +1,24 @@
+- content_for(:title, '聖經閱讀')
+
+#bible-read.paper.paper-curl.wth-paper
+  %h2 聖經閱讀
+  .layout
+    #bible-read-toolbar
+      .btn-toolbar(role="toolbar")
+        .btn-group
+          .btn.btn-default
+            %a(href="#") 上次閱讀
+          .btn.btn-default
+            %a(href="#") 1
+          .btn.btn-default
+            %a(href="#") 2
+          .btn.btn-default
+            %a(href="#") 3
+          .btn.btn-default
+            %a(href="#") 4
+          .btn.btn-default
+            %a(href="#") 5
+          .btn.btn-default
+            %a(href="#") 6
+
+    = render :partial => "/templates/book_list"

@@ -45,6 +45,7 @@
   border-bottom: none;
   li {
     a {
+      @include font-size(24px);
       @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-sub, 1), rgba($twb-white, .5)) );
     }
     a:hover, a:focus {

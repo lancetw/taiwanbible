@@ -1,0 +1,106 @@
+- content_for(:title, '台灣聖經網行動版')
+
+#breaknews
+  %ul.nav.nav-pills.nav-stacked
+    %li.active
+      %a(href="#") 《穿越時空看聖經》　市井小民也能讀懂聖經
+    %li
+      %a(href="#")  貴格會合一堂 社區課程熱門
+    %li
+      %a(href="#")  猶太人與基督信徒關係今優於昔
+    %li
+      %a(href="#")  父職缺席世代必讀的書－《男子漢大丈夫》
+    %li
+      %a(href="#" )  正確因應暴力攻擊 保障人身安全
+#content
+  %article.news
+    .title
+      %h2
+        %a(href="#") 《穿越時空看聖經》　市井小民也能讀懂聖經
+    .news
+      %img.img-responsive(src="http://placehold.it/300x200")
+      %p 聖經是基督徒必讀的書，但從舊約到新約，貫穿的歷史年份和背景故事，令許多弟兄姊妹看⋯
+
+    .more
+      %a.btn.btn-info.btn-lg(href="#") 更多基督教新聞
+#info
+  %ul.nav.nav-tabs.responsive#infoTab
+    %li
+      %a(href="#site" role="tab" data-toggle="tab") 網站新聞
+    %li
+      %a(href="#gift" role="tab" data-toggle="tab") 靈糧中心
+    %li
+      %a(href="#special" role="tab" data-toggle="tab") 專題推薦
+    %li
+      %a(href="#books" role="tab" data-toggle="tab") 每周一書
+
+  .tab-content.responsive
+    .tab-pane.fade.in#site
+      %img(src="http://placehold.it/100x80")
+      %h2 台灣聖經網夏季讀書會
+      %p 為鼓勵網友們多閱讀，台灣聖經網夏季讀書會開跑了喔! 聖經網每季會推出五本基督教書籍，供會員用靈糧點數兌換。點數比照靈糧點數中心其他書籍。 (每種書限量3本，共15本)。會員在兌換後兩個月內，如能寄回一篇超過500字以上的讀書心得，台灣聖經網將會返回當初所兌換50%的點數。
+      %a.btn.btn-default.btn-md(href="#") 下一則新聞
+    .tab-pane.fade#gift
+      %img(src="http://placehold.it/100x80")
+      %h2 最寶貴的禮物（約翰福音單本）
+      %p 把這份最棒的禮物送給任何你遇見的人吧！這本美麗的約翰福音書內容包含全本的約翰福音經文（和合本修訂本），以及如何成為一個基督徒的相關資訊。
+      %p 兌換點數: 1234
+      %a.btn.btn-default.btn-md(href="#") 本中心禮品不接受刷卡、不接受現金! 僅接受靈糧點數兌換...
+    .tab-pane.fade#special
+      %img(src="http://placehold.it/100x80")
+      %h2 基督徒站長工具箱
+      %p 基督徒站長工具箱由中華基督教網路發展協會負責，提供各式基督教相關的站長工具。讓所有基督徒站長們，在不用寫程式、不用管理資料庫、不用專業知識背景的前提下，就可以輕鬆的在您的網站 (或部落格) 放入各式基督教工具。並且這裡所有的服務，全部是免費的! 歡迎大家多加利用!
+      %a.btn.btn-default.btn-md(href="#") 立即前往
+    .tab-pane.fade#books
+      %img(src="http://placehold.it/100x80")
+      %h2 耶穌比宗教大
+      %p 如果宗教這麼偉大，為什麼它引發了這麼多戰爭？它能蓋巨型教堂，為什麼卻無法餵養窮人？你追隨的是真實的耶穌，還是被發明出來的耶穌？如果你曾對宗教抱有懷疑、不解，甚至失望，把宗教說的先放一邊，聽聽耶穌是怎麼說的！
+      %a.btn.btn-default.btn-md(href="#") 了解更多
+      %a(href="#") 本專題由 MyRock 磐石網路書局提供
+#sponsor
+  .panel.panel-default
+    .panel-heading
+      基督徒交友限定 LoveUno.com
+    .panel-body
+      %img(src="http://placehold.it/100x80")
+      %p 一個基督徒專屬的線上交友平台—愛諾園，於三月一日正式對外服務。愛諾園是針對未婚基督徒所設計的交友平台，在「真愛」與「承諾」的基礎下，讓未婚的基督徒們可以透過網站，認識到自己教會以外的基督徒，尋找合適的另一半。
+      %a.btn.btn-primary.btn-large.btn-block(href="#") 立即前往
+#topic
+  %ul.nav.nav-tabs.responsive#topicTab
+    %li
+      %a(href="#topic-1" role="tab" data-toggle="tab") 蘇老師時間
+    %li
+      %a(href="#topic-2" role="tab" data-toggle="tab") 劉三講古
+    %li
+      %a(href="#topic-3" role="tab" data-toggle="tab") 黃牧師靈修
+    %li
+      %a(href="#topic-4" role="tab" data-toggle="tab") 每日經歷神
+
+  .tab-content.responsive
+    .tab-pane.fade.in#topic-1
+      %img(src="http://placehold.it/100x80")
+      %h2 一連串的錯怪-上
+      %p 有個周末星期六，行程甚緊，一早趕去烏來對監察院高階幹部教育訓練致詞，再驅車前往陽明山，參加海峽兩岸高中學生交流開訓典禮，然後搭乘高鐵到台中，參訪台中歷史最悠久的柳原教會及其文史館，晚上在豐原⋯
+      %a.btn.btn-info.btn-lg(href="#") 完整閱讀
+    .tab-pane.fade#topic-2
+      %img(src="http://placehold.it/100x80")
+      %h2 信主愈久，愈困惑？
+      %p 哪會啊？愈事奉愈甘甜啦！ 甘甜只是一個過程而已，等你服事夠久，你就知道，一切都是「虛空的虛空」… 以上對話是某些基督徒在信仰過程中很容易遇到的狀況。 信仰是一個漫長的過程，波動難免⋯
+      %a.btn.btn-info.btn-lg(href="#") 完整閱讀
+    .tab-pane.fade#topic-3
+      %img(src="http://placehold.it/100x80")
+      %h2  和氏璧（7-14-2014）
+      %p 春秋時期，楚人卞和所發現了一塊美玉，他將玉璞獻給楚厲王，但王認為這只是塊石頭，於是砍去和氏左腳。武王即位，和氏再次將該玉獻給王，但玉工仍然鑑定這是一塊石頭，以致和氏的右腳也被砍掉。和氏回家後⋯
+      %a.btn.btn-info.btn-lg(href="#") 完整閱讀
+    .tab-pane.fade#topic-4
+      %img(src="http://placehold.it/100x80")
+      %h2 每日經歷神
+      %p 8月30日 箴言 第11天 經文：箴言八章1～36節 主題：無與倫比的智慧 分享： 智慧與無知愚蒙的對比，透過世界情慾的誘惑與試探表達出來；然而，智慧不僅僅幫助我們對抗邪惡⋯
+      %a.btn.btn-info.btn-lg(href="#") 完整閱讀
+
+
+
+
+
+
+

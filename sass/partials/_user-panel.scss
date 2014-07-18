@@ -1,8 +1,10 @@
 ul.user-panel {
   @include noList;
+  background: rgba($twb-light, .5);
   border: 5px solid $twb-main;
   @include font-size(26px);
   padding-bottom: 12px;
+  margin-bottom: 12px;
 
   li {
     padding: 0 12px;

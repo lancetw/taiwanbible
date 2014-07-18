@@ -6,6 +6,14 @@
   a, a:active, a:hover {
     @include font-size(38px);
     color: rgba($twb-blue, .8);
+
+    @include breakpoint($tablet-bp) {
+      @include font-size(64px);
+    }
+  }
+
+  a:focus {
+    color: rgba($twb-green, .5);
   }
 
   a.btn.btn-default {
@@ -14,7 +22,7 @@
     background: rgba($twb-white, .5);
   }
   &.left {
-    top: 12px;
+    top: 6px;
     left: 0;
     a.btn.btn-default {
       border-top-right-radius: 12px;
@@ -22,7 +30,7 @@
     }
   }
   &.right {
-    top: 12px;
+    top: 6px;
     right: 0;
     a.btn.btn-default {
       border-top-left-radius: 12px;

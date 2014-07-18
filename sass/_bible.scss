@@ -1,0 +1,217 @@
+
+#container.bible aside.left {
+  @include transform(rotate3d(0, 0, 0, 0));
+  @include span($mobile-columns);
+  margin-left: -100%;
+  .show-left & {
+    margin-left: 0;
+  }
+}
+
+#container.bible main {
+  @include transform(rotate3d(0, 0, 0, 0));
+  @include span($mobile-columns);
+  margin-right: -100%;
+  .show-right & { margin-left: -100%; }
+}
+
+#container.bible aside.right {
+  @include transform(rotate3d(0, 0, 0, 0));
+  @include span($mobile-columns last);
+  margin-right: -100%;
+  .show-right & {
+    margin-right: 0;
+  }
+}
+
+// Tablet
+
+@include susy-breakpoint($tablet-bp, $tablet) {
+
+  #container.bible [href="#left"] { visibility: visible; }
+
+  #container.bible aside.left {
+    @include span(3);
+    margin-left: - span(3);
+    .show-right & { margin-left: - span(3); }
+  }
+  #container.bible main {
+    @include span(8);
+    .show-right & {
+      margin-right: 0;
+      margin-left: - span(5);
+    }
+  }
+  #container.bible aside.right {
+    @include span(5 last);
+    .show-right & {
+      margin-right: 0;
+      @include ipad(landscape) {
+        margin-left: 0;
+        @include span(4 last);
+      }
+    }
+  }
+
+}
+
+// Desktop
+
+@include susy-breakpoint($desktop-bp, $desktop) {
+
+  #container.bible [href="#left"] { visibility: hidden; }
+  #container.bible [href="#right"] { visibility: hidden; }
+
+  @include ipad(landscape) {
+    #container.bible [href="#left"] { visibility: visible; }
+    #container.bible [href="#right"] { visibility: visible; }
+  }
+
+  #container.bible aside.left {
+    @include span(3);
+    margin-left: 0;
+    @include ipad(landscape) {
+      @include span(4);
+      margin-left: - span(4);
+    }
+    .show-right & {
+      @include span(3);
+      margin-left: 0;
+    }
+  }
+  #container.bible main {
+    @include span(6);
+    margin-left: 0;
+    @include ipad(landscape) {
+      @include span(12);
+    }
+    .show-right & {
+      margin-left: 0;
+      @include span(6);
+      @include ipad(landscape) {
+        @include span(8);
+        margin-left: - span(4);
+      }
+    }
+  }
+  #container.bible aside.right {
+    margin-right: 0;
+    @include span(3 last);
+    @include ipad(landscape) {
+      @include span(4 last);
+      margin-right: - span(5);
+    }
+    .show-right & {
+      margin-right: 0;
+      @include span(3 last);
+      @include ipad(landscape) {
+        @include span(4 last);
+      }
+    }
+  }
+}
+
+#container.bible main {
+  //@include background( linear-gradient(rgba($twb-white, .8), $twb-white) );
+}
+
+#container.bible.with-paper {
+  //background: $twb-white;
+}
+
+#container.bible {
+  background: $twb-light;
+
+  .layout {
+    margin: -10px;
+  }
+
+  .toogle {
+    a, a:active, a:hover {
+      color: rgba($twb-read, .8);
+    }
+
+    a:focus {
+      color: rgba($twb-read, .5);
+    }
+  }
+
+  .btn a {
+    color: rgba($twb-read, .5);
+  }
+
+  .list-group.books {
+    text-align: center;
+    margin-top: 24px;
+    .list-group-item {
+      display: inline-block;
+      width: 210px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  .list-group.chapters {
+    text-align: center;
+    margin-top: 24px;
+    .list-group-item {
+      display: inline-block;
+      width: 120px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  ul.intro {
+    color: rgba($twb-read, .9);
+    @include noList;
+    @include font-size(26px);
+
+    li {
+      padding-left: 12px;
+      padding-right: 12px;
+      line-height: 2.1;
+    }
+  }
+}
+
+#bible-read-toolbar {
+  text-align: center;
+}
+
+#bible-read-toolbar .btn-toolbar {
+  display: inline-block;
+}
+
+#bible-read {
+  h2 {
+    color: rgba($twb-read, .9);
+    line-height: 54px;
+    text-align: center;
+  }
+
+  h3 {
+    color: rgba($twb-read, .9);
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 42px;
+    letter-spacing: 3px;
+  }
+
+  p {
+    color: rgba($twb-read, .9);
+  }
+
+  .content {
+    padding: 16px;
+    @include font-size(32px);
+    line-height: 2.1;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    color: rgba($twb-read, .9);
+
+    @include susy-breakpoint($tablet-bp, $tablet) {
+      padding: 42px;
+    }
+  }
+}

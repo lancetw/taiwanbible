@@ -5,7 +5,7 @@
   @include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-main, .8), rgba($twb-sub, 1)) );
 
   h1 {
-    @include font-size(56px);
+    @include font-size(52px);
     letter-spacing: 10px;
     margin: 0;
     padding: 0;
@@ -39,7 +39,20 @@
     margin: 0 auto;
     width: 42%;
   }
-}
 
+  .dropdown-backdrop {
+    position: static;
+  }
+
+  .dropdown-menu {
+    position: static;
+    z-index: 1001;
+  }
+
+  .dropdown-menu > li > a {
+    @include font-size(32px);
+  }
+
+}
 
 

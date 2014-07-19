@@ -6,9 +6,10 @@
       .twb-http TaiwanBible.com
     %h1 台灣聖經網
     .twb-donate
-      .btn.btn-primary.btn-lg 參與奉獻
-  %form(role="search")
-    .input-group.input-group-lg
+      %a.btn.btn-primary.btn-lg(href="http://devote.ccnda.org/") 參與奉獻
+  %form#search(role="search")
+    %input(type="hidden" name="area" value="bible")
+    .input-group.input-group.input-group-lg
       %input.input.form-control(type="input" placeholder="聖經搜尋")
       %span.input-group-btn
         %button.btn.btn-warning(type="button") 搜尋
@@ -17,19 +18,19 @@
           %span.sr-only Toggle Dropdown
         %ul.dropdown-menu(role="menu" lang="en")
           %li
-            %a(href="#") 聖經
+            %a(href="#" data-area="bible") 聖經
           %li
-            %a(href="#") 知識
+            %a(href="#" data-area="wiki") 知識
           %li
-            %a(href="#") 辭典
+            %a(href="#" data-area="topic") 辭典
           %li
-            %a(href="#") 詩歌
+            %a(href="#" data-area="lyrics") 詩歌
           %li
-            %a(href="#") 新聞
+            %a(href="#" data-area="news") 新聞
           %li
-            %a(href="#") 網站
+            %a(href="#" data-area="web") 網站
           %li
-            %a(href="#") 好友
+            %a(href="#" data-area="friend") 好友
           %li.divider
           %li
             %a(href="#") 更多⋯

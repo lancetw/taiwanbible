@@ -1,10 +1,11 @@
 .toogle {
+  top: 12px;
   z-index: 32767;
   position: fixed;
   @include inline-block;
 
   a, a:active, a:hover {
-    @include font-size(38px);
+    @include font-size(42px);
     color: rgba($twb-blue, .8);
 
     @include breakpoint($tablet-bp) {
@@ -22,7 +23,6 @@
     background: rgba($twb-white, .5);
   }
   &.left {
-    top: 6px;
     left: 0;
     a.btn.btn-default {
       border-top-right-radius: 12px;
@@ -30,7 +30,6 @@
     }
   }
   &.right {
-    top: 6px;
     right: 0;
     a.btn.btn-default {
       border-top-left-radius: 12px;

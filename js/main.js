@@ -70,7 +70,7 @@ require([
   'highlight',
   'bible',
   'nav',
-  'quiz',
+  'search',
 
 ],function(angular) {
   'use strict';

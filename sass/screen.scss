@@ -6,7 +6,6 @@
 @import "breakpoint";
 @import "media-queries";
 @import "compass";
-//@import "bootstrap";
 @import "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css";
 @import "vars";
 @import "mixin";
@@ -38,6 +37,14 @@ html, body {
   height: 100%;
 }
 
+html {
+  font-size: 62.5%;
+
+  @include breakpoint($desktop-bp) {
+    font-size: 53.3%;
+  }
+}
+
 h2 {
   color: $twb-green;
 }
@@ -54,7 +61,7 @@ a {
 }
 
 .page {
-  min-width: 290px;
+  min-width: 260px;
   overflow: hidden;
   background: $twb-sub;
   padding-bottom: 20px;

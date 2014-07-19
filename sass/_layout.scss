@@ -22,7 +22,6 @@ header, footer {
 
 aside.left, main, aside.right {
   @include transition (all 200ms ease-in-out);
-
   padding-top: 12px;
 }
 
@@ -153,3 +152,4 @@ ul.nav > li > a {
 @-moz-document url-prefix() {
   fieldset { display: table-cell; }
 }
+

@@ -28,8 +28,12 @@ p {
   text-justify: inter-ideograph;
 }
 
-.center {
+.text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .vertical {
@@ -411,6 +415,11 @@ ul.nav > li > a {
 }
 
 /* Paper */
+.paper-white {
+  background: #FEFEFE !important;
+  border: 1px solid #FEFEFE !important;
+}
+
 .paper {
   position: relative;
   padding: 19px;
@@ -745,8 +754,8 @@ CSS
   background: linear-gradient(to bottom, #96d9f8, rgba(150, 217, 248, 0.8), #f0faff);
 }
 .jumbotron h1 {
-  font-size: 56px;
-  font-size: 3.5rem;
+  font-size: 52px;
+  font-size: 3.25rem;
   letter-spacing: 10px;
   margin: 0;
   padding: 0;
@@ -777,9 +786,23 @@ CSS
     width: 42%;
   }
 }
+.jumbotron > form[role='search'] .dropdown-backdrop {
+  position: static;
+}
+.jumbotron > form[role='search'] .dropdown-menu {
+  position: static;
+  z-index: 1001;
+}
+.jumbotron > form[role='search'] .dropdown-menu > li > a {
+  font-size: 32px;
+  font-size: 2rem;
+}
 
 article.news {
   padding: 12px;
+}
+article.news img {
+  padding: 5px;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -873,6 +896,7 @@ footer #copyright p {
 }
 
 .toogle {
+  top: 12px;
   z-index: 32767;
   position: fixed;
   display: inline-block;
@@ -882,8 +906,8 @@ footer #copyright p {
   *display: inline;
 }
 .toogle a, .toogle a:active, .toogle a:hover {
-  font-size: 38px;
-  font-size: 2.375rem;
+  font-size: 42px;
+  font-size: 2.625rem;
   color: rgba(3, 106, 165, 0.8);
 }
 @media (min-width: 740px) {
@@ -901,7 +925,6 @@ footer #copyright p {
   background: rgba(255, 255, 255, 0.5);
 }
 .toogle.left {
-  top: 6px;
   left: 0;
 }
 .toogle.left a.btn.btn-default {
@@ -909,7 +932,6 @@ footer #copyright p {
   border-bottom-right-radius: 12px;
 }
 .toogle.right {
-  top: 6px;
   right: 0;
 }
 .toogle.right a.btn.btn-default {
@@ -945,7 +967,7 @@ ul.user-panel h2 {
 #twb-nav {
   padding: 0;
   margin: 0;
-  margin-left: 46px;
+  margin-left: 33px;
   margin-right: -16px;
 }
 #twb-nav li {
@@ -973,6 +995,9 @@ ul.user-panel h2 {
 #twb-nav ul li {
   text-align: left;
   margin-bottom: 8px;
+}
+#twb-nav ul li a {
+  padding: 5px 7px;
 }
 #twb-nav ul > li:first-child {
   font-size: 42px;
@@ -1331,6 +1356,15 @@ html, body {
   height: 100%;
 }
 
+html {
+  font-size: 62.5%;
+}
+@media (min-width: 980px) {
+  html {
+    font-size: 53.3%;
+  }
+}
+
 h2 {
   color: #008075;
 }
@@ -1351,7 +1385,7 @@ a:hover {
 }
 
 .page {
-  min-width: 290px;
+  min-width: 260px;
   overflow: hidden;
   background: #f0faff;
   padding-bottom: 20px;

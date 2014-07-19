@@ -1,5 +1,6 @@
 -# JS
-%script(data-main="/js/main" src="/js/require.js")
+- no_cache_num = rand(32767)
+%script(data-main="/js/main" src="/js/require.js?v=#{no_cache_num}")
 -# ====================================================================
 -# Asynchronous Google Analytics
 -# Change UA-XXXXX-X to be your site's ID

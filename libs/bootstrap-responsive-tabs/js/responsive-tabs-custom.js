@@ -144,7 +144,7 @@ fakewaffle.bindTabToCollapse = function () {
     collapse.on('shown.bs.collapse', function (e) {
         var id = $(e.target).context.id;
 
-        $('html, body').animate({ scrollTop: $("#" + id).offset().top }, 1000);
+        $('html, body').animate({ scrollTop: $("#" + id).offset().top }, 300);
     });
 
 

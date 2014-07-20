@@ -1358,11 +1358,9 @@ html, body {
 
 html {
   font-size: 62.5%;
-}
-@media (min-width: 980px) {
-  html {
-    font-size: 53.3%;
-  }
+  /*@include breakpoint($desktop-bp) {
+
+  }*/
 }
 
 h2 {
@@ -1385,7 +1383,7 @@ a:hover {
 }
 
 .page {
-  min-width: 260px;
+  min-width: 320px;
   overflow: hidden;
   background: #f0faff;
   padding-bottom: 20px;

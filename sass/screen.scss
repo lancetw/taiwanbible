@@ -40,9 +40,9 @@ html, body {
 html {
   font-size: 62.5%;
 
-  @include breakpoint($desktop-bp) {
-    font-size: 53.3%;
-  }
+  /*@include breakpoint($desktop-bp) {
+
+  }*/
 }
 
 h2 {
@@ -61,7 +61,7 @@ a {
 }
 
 .page {
-  min-width: 260px;
+  min-width: 320px;
   overflow: hidden;
   background: $twb-sub;
   padding-bottom: 20px;

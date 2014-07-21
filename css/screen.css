@@ -801,8 +801,20 @@ CSS
 article.news {
   padding: 12px;
 }
-article.news img {
+article.news .img-box {
+  position: relative;
+  max-height: 160px;
+  overflow: hidden;
+}
+article.news .img-box img {
   padding: 5px;
+  width: 100%;
+  margin-top: -120px;
+  display: inline-block;
+  vertical-align: middle;
+}
+article.news p {
+  margin: 12px;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -1349,6 +1361,83 @@ ul.user-panel h2 {
   text-align: center;
   font-size: 36px;
   font-size: 2.25rem;
+}
+
+#news-read {
+  text-align: center;
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+}
+#news-read h2 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+#news-read p.author {
+  text-align: right;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+#news-read p.date {
+  color: #21759c;
+  text-align: right;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+#news-read .readable {
+  line-height: 2.1;
+}
+@media (min-width: 1330px) {
+  #news-read.two-line {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+#news-read .news-box {
+  display: inline-flex;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  text-align: left;
+  margin: 0 auto;
+}
+#news-read .panel-img {
+  max-height: 160px;
+  overflow: hidden;
+  text-align: center;
+}
+#news-read .panel-img .origin {
+  z-index: 2;
+  float: right;
+  position: relative;
+  top: 0;
+  right: 0;
+  background: rgba(33, 117, 156, 0.5);
+  padding: 5px;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+#news-read .panel-img .imgbox {
+  z-index: 1;
+  position: relative;
+}
+#news-read .panel-img .imgbox img {
+  width: 100%;
+  margin-top: -120px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#news-read .panel-body {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 2.1;
+}
+#news-read .panel-btn .btn {
+  border-radius: 0;
+  border: none;
 }
 
 html, body {

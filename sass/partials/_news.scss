@@ -1,9 +1,23 @@
 article.news {
   padding: 12px;
 
-  img {
-    padding: 5px;
+  .img-box {
+    position: relative;
+    max-height: 160px;
+    overflow: hidden;
+    img {
+      padding: 5px;
+      width: 100%;
+      margin-top: -120px;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
+
+  p {
+    margin: 12px;
+  }
+
 }
 
 .nav > li > a:hover, .nav > li > a:focus {

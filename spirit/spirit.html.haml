@@ -1,0 +1,27 @@
+- per = 1
+- content_for(:title, '靈修')
+
+#spirit
+  .paper.paper-white
+    %h2 我的靈修計畫
+    %p 一週五天，一年聖經熟讀計畫
+
+    .progress
+      .progress-bar.progress-bar-success.progress-bar-striped.active(role="progressbar" aria-valuenow="#{per}" aria-valuemin="0" aria-valuemax="100" style="width: #{per}%; min-width: 60px;")
+        %span 完成 #{per}%
+
+    .text-right
+      %small（1 / 260 天）
+
+  .spirit-today
+    .page-header
+      %h3.text-center 本日經文
+    .text-center
+      %a.btn.plain.btn-lg.btn-success(href="read.html") 創世紀第 1 章
+      %a.btn.plain.btn-lg.btn-info(href="read.html") 創世紀第 2 章
+      %a.btn.plain.btn-lg.btn-info(href="read.html") 約伯記第 2 章
+      %a.btn.plain.btn-lg.btn-info(href="read.html") 以賽亞書第 2 章
+      %a.btn.plain.btn-lg.btn-info(href="read.html") 馬太福音第 2 章
+  %hr
+  .text-center
+    .btn.btn-lg.btn-primary 我已經完成本日的讀經進度

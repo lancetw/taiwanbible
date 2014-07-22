@@ -76,7 +76,7 @@ aside.right {
     .show-right & {
       margin-right: 0;
       @include ipad(landscape) {
-        @include span(3 last);
+        @include span(2 last);
       }
     }
   }
@@ -152,4 +152,3 @@ ul.nav > li > a {
 @-moz-document url-prefix() {
   fieldset { display: table-cell; }
 }
-

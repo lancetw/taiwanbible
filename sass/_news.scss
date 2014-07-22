@@ -72,4 +72,12 @@
       border: none;
     }
   }
+
+
+  @include susy-breakpoint($desktop-bp, $desktop) {
+    .paper {
+      padding: 42px !important;
+    }
+  }
+
 }

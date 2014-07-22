@@ -219,7 +219,7 @@ aside.right {
 }
 @media only screen and (min-width: 740px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .show-right aside.right {
-    width: 37.5%;
+    width: 25%;
     float: right;
     padding-left: 1.25%;
     padding-right: 1.25%;
@@ -1438,6 +1438,15 @@ ul.user-panel h2 {
 #news-read .panel-btn .btn {
   border-radius: 0;
   border: none;
+}
+@media (min-width: 980px) {
+  #news-read .paper {
+    padding: 42px !important;
+  }
+}
+
+.spirit-today .btn.plain {
+  margin: 8px;
 }
 
 html, body {

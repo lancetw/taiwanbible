@@ -10,6 +10,7 @@
 /* REQUIRES COMPASS */
 /* Faster gradients, if a stop is not specified a -20 of the start
 is assigned for you this may be adjustable in the near future */
+@import url(../libs/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css);
 @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css";
 h2 {
   margin-top: 0;
@@ -57,6 +58,12 @@ i.icon {
 blockquote :not(:lang(zh)),
 html.han-biaodian-pro-cns blockquote :not(:lang(zh)) {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.preview {
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 2.1;
 }
 
 #container {
@@ -801,6 +808,10 @@ CSS
 article.news {
   padding: 12px;
 }
+article.news p {
+  font-size: 26px;
+  font-size: 1.625rem;
+}
 article.news .img-box {
   position: relative;
   max-height: 160px;
@@ -822,8 +833,16 @@ article.news p {
   background: rgba(240, 250, 255, 0.8);
 }
 
+#news-list .panel {
+  margin-bottom: 10px;
+}
+
 .panel-default {
   border: 1px solid #96d9f8;
+  /*.tab-content {
+    background: rgba($twb-white, .5);
+    border: 1px solid $twb-main;
+  }*/
 }
 .panel-default h4 > a {
   color: #036aa5;
@@ -839,13 +858,13 @@ article.news p {
   background: -webkit-linear-gradient(top, #96d9f8, #f0faff, rgba(255, 255, 255, 0.5));
   background: linear-gradient(to bottom, #96d9f8, #f0faff, rgba(255, 255, 255, 0.5));
 }
-.panel-default .tab-content {
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid #96d9f8;
-}
 .panel-default .panel-heading + .panel-collapse > .panel-body {
   background: rgba(241, 248, 254, 0.5);
   border-top: none;
+}
+.panel-default .panel-heading + .panel-collapse > .panel-body .img-thumbnail {
+  padding: 5px;
+  margin: 0 10px 10px 0;
 }
 
 .panel-heading .accordion-toggle:after {
@@ -895,6 +914,11 @@ article.news p {
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid #96d9f8;
   margin-bottom: 24px;
+}
+.tab-content .img-thumbnail {
+  padding: 5px;
+  margin: 0 0 10px 10px;
+  max-height: 160px;
 }
 
 footer {
@@ -1056,6 +1080,92 @@ ul.user-panel h2 {
 .panel-default .panel-body img {
   float: left;
   padding-right: 12px;
+}
+
+.material-read {
+  text-align: center;
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
+}
+.material-read h2 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+.material-read p.author {
+  text-align: center;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.material-read p.date {
+  color: #21759c;
+  text-align: right;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.material-read .readable {
+  line-height: 2.1;
+}
+@media (min-width: 1330px) {
+  .material-read.two-line {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+.material-read .twb-box {
+  width: 100%;
+  display: inline-flex;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  text-align: left;
+  margin: 0 auto;
+}
+.material-read .panel {
+  width: 100%;
+}
+.material-read .panel-img {
+  max-height: 160px;
+  overflow: hidden;
+  text-align: center;
+}
+.material-read .panel-img .origin {
+  z-index: 2;
+  float: right;
+  position: relative;
+  top: 0;
+  right: 0;
+  background: rgba(33, 117, 156, 0.5);
+  padding: 5px;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+.material-read .panel-img .imgbox {
+  z-index: 1;
+  position: relative;
+}
+.material-read .panel-img .imgbox img {
+  width: 100%;
+  margin-top: -120px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.material-read .panel-body {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 2.1;
+}
+.material-read .panel-btn .btn {
+  border-radius: 0;
+  border: none;
+}
+@media (min-width: 980px) {
+  .material-read .paper {
+    padding: 42px !important;
+  }
 }
 
 #container.bible aside.left {
@@ -1363,90 +1473,53 @@ ul.user-panel h2 {
   font-size: 2.25rem;
 }
 
-#news-read {
-  text-align: center;
-  -moz-column-count: 1;
-  -webkit-column-count: 1;
-  column-count: 1;
-}
-#news-read h2 {
-  font-size: 32px;
-  font-size: 2rem;
-}
-#news-read p.author {
-  text-align: right;
-  font-size: 24px;
-  font-size: 1.5rem;
-}
-#news-read p.date {
-  color: #21759c;
-  text-align: right;
-  font-size: 24px;
-  font-size: 1.5rem;
-}
-#news-read .readable {
-  line-height: 2.1;
-}
-@media (min-width: 1330px) {
-  #news-read.two-line {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-  }
-}
-#news-read .news-box {
-  display: inline-flex;
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  break-inside: avoid;
-  text-align: left;
-  margin: 0 auto;
-}
-#news-read .panel-img {
-  max-height: 160px;
-  overflow: hidden;
-  text-align: center;
-}
-#news-read .panel-img .origin {
-  z-index: 2;
-  float: right;
-  position: relative;
-  top: 0;
-  right: 0;
-  background: rgba(33, 117, 156, 0.5);
-  padding: 5px;
-  color: white;
-  text-align: center;
-  font-size: 22px;
-  font-size: 1.375rem;
-}
-#news-read .panel-img .imgbox {
-  z-index: 1;
-  position: relative;
-}
-#news-read .panel-img .imgbox img {
-  width: 100%;
-  margin-top: -120px;
-  display: inline-block;
-  vertical-align: middle;
-}
-#news-read .panel-body {
-  font-size: 28px;
-  font-size: 1.75rem;
-  line-height: 2.1;
-}
-#news-read .panel-btn .btn {
-  border-radius: 0;
-  border: none;
-}
-@media (min-width: 980px) {
-  #news-read .paper {
-    padding: 42px !important;
-  }
-}
-
 .spirit-today .btn.plain {
   margin: 8px;
+}
+
+#topic .panel-heading.fix {
+  background: none;
+}
+#topic .img-avatar {
+  margin: 6px;
+}
+#topic .img-avatar img {
+  padding: 4px;
+}
+
+#diary .twb-box {
+  background: transparent;
+}
+#diary .panel {
+  background: transparent;
+}
+#diary .panel.panel-default {
+  background: transparent;
+}
+#diary .panel-heading {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+#diary .panel-verse {
+  font-size: 26px;
+  font-size: 1.625rem;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 18px;
+}
+#diary .img-avatar {
+  background: rgba(255, 255, 255, 0.5);
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#diary .panel-body {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: rgba(33, 117, 156, 0.9);
+  background: rgba(33, 117, 156, 0.1);
 }
 
 html, body {

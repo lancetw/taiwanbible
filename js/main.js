@@ -19,6 +19,7 @@ require.config({
     'bootstrap-responsive-tabs': '../../libs/bootstrap-responsive-tabs/js/responsive-tabs-custom',
     'bootstrap-scrollspy': bowerUrl + 'bootstrap-sass/js/scrollspy',
     'highlight': bowerUrl + 'jQuery.highlightRegex/highlightRegex.min',
+    'bootstrap-switch': bowerUrl + 'bootstrap-switch/dist/js/bootstrap-switch.min',
   },
   shim:{
     'underscore': { exports: '_' },
@@ -36,6 +37,7 @@ require.config({
     'bootstrap-responsive-tabs': { deps: ['bootstrap-tab', 'bootstrap-collapse'] },
     'bootstrap-scrollspy': { deps: ['jquery'] },
     'highlight': { deps: ['jquery'] },
+    'bootstrap-switch': { deps: ['jquery'] },
   },
   map:{
   },
@@ -49,16 +51,16 @@ window.name = 'NG_DEFER_BOOTSTRAP!';
 
 require([
   'angular',
-  'angular-cookies',
-  'angular-resource',
-  'angular-sanitize',
-  'angular-route',
-  'app',
+//  'angular-cookies',
+//  'angular-resource',
+//  'angular-sanitize',
+//  'angular-route',
+//  'app',
   'underscore',
-  'services/services',
-  'controllers/controllers',
-  'filters/filters',
-  'directives/directives',
+//  'services/services',
+//  'controllers/controllers',
+//  'filters/filters',
+//  'directives/directives',
   'fastclick',
   'bootstrap-dropdown',
   'bootstrap-tab',
@@ -74,18 +76,15 @@ require([
 
 ],function(angular) {
   'use strict';
-  angular.element().ready(function() {
-    angular.resumeBootstrap(['myApp']);
-  });
+//  angular.element().ready(function() {
+//    angular.resumeBootstrap(['myApp']);
+//  });
 },function(fastclick) {
   window.addEventListener('load', function() {
     new FastClick(document.body);
   }, false);
 });
 
-require(['bootstrap-button'], function() {
-  $('.btn').button();
-});
 
 require(['bootstrap-responsive-tabs'], function() {
   $('#infoTab a:first, #topicTab a:first').tab('show');
@@ -103,3 +102,10 @@ require(['bootstrap-responsive-tabs'], function() {
   })(jQuery);
 });
 
+require(['bootstrap-button'], function() {
+  $('.choice').button();
+});
+
+require(['bootstrap-switch'], function() {
+  $("input[name='public']").bootstrapSwitch();
+});

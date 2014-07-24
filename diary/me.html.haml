@@ -1,0 +1,27 @@
+//diary
+- content_for(:title, '我的靈修日記')
+
+.text-center
+  .btn-group
+    %a.btn.btn-info.btn-lg(href="diary.html") 全網靈修日記
+    %a.btn.btn-info.btn-lg.active(href="me.html") 我的靈修日記
+
+%hr
+%h2 我的靈修日記
+#diary.material-read.two-line
+  - 20.times do |n|
+    .twb-box
+      .panel.panel-default
+        .panel-heading
+          %p.date
+            = lorem_date("%Y.%m.%d", 2013..2008)
+
+          .img-avatar
+            %img(src="http://placekitten.com/88/88")
+        .panel-verse
+          %p
+            = zh_lorem_paragraph
+        .panel-body
+          %p
+            = zh_lorem_paragraphs(1 + rand(3))
+

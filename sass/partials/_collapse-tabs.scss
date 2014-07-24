@@ -14,14 +14,18 @@
     }
   }
 
-  .tab-content {
+  /*.tab-content {
     background: rgba($twb-white, .5);
     border: 1px solid $twb-main;
-  }
+  }*/
 
   .panel-heading + .panel-collapse > .panel-body {
     background: rgba($twb-light, .5);
     border-top: none;
+    .img-thumbnail {
+      padding: 5px;
+      margin: 0 10px 10px 0;
+    }
   }
 }
 
@@ -73,4 +77,10 @@
   background: rgba($twb-white, .5);
   border: 1px solid $twb-main;
   margin-bottom: 24px;
+
+  .img-thumbnail {
+    padding: 5px;
+    margin: 0 0 10px 10px;
+    max-height: 160px;
+  }
 }

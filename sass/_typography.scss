@@ -47,3 +47,8 @@ blockquote :not(:lang(zh)),
 html.han-biaodian-pro-cns blockquote :not(:lang(zh)) {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+.preview {
+  @include font-size(26px);
+  line-height: 2.1;
+}

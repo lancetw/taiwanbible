@@ -1,0 +1,16 @@
+//diary_new
+#diary-new
+  %h3.text-center 寫靈修日記
+  %hr
+  %h4 經文
+  %textarea.form-control(rows="5")
+  %small.badge.alert-info ※請標明您經文的出處。例如:馬太福音 1章
+  %h4 日記
+  %textarea.form-control(rows="12")
+  %small.badge.alert-info ※請記錄您的靈修心得，請勿由外部複製文章
+  %hr
+  %p.text-center
+    %input(type="checkbox" name="public" checked data-size="large" data-on-text="公開" data-off-text="隱藏")
+  %small.badge.alert-info ※鼓勵您公開您的靈修日記與弟兄姐妹一同分享造就
+  %hr
+  %a.btn.btn-primary.btn-lg.btn-block 確認送出本篇日記

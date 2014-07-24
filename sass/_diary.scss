@@ -1,0 +1,41 @@
+#diary {
+
+  .twb-box {
+    background: transparent;
+  }
+
+  .panel {
+    background: transparent;
+  }
+
+  .panel.panel-default {
+    background: transparent;
+  }
+
+  .panel-heading {
+    background: rgba($twb-white, .5);
+    text-align: center;
+  }
+
+  .panel-verse {
+    @include font-size(26px);
+    background: rgba($twb-white, .5);
+    padding: 18px;
+  }
+
+  .img-avatar {
+    background: rgba($twb-white, .5);
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .panel-body {
+    @include font-size(24px);
+    color: rgba($twb-heavily, .9);
+    background: rgba($twb-shadow, .1);
+  }
+}

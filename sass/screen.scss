@@ -12,6 +12,7 @@
 @import "colors";
 @import "typography";
 @import "layout";
+@import "../libs/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css";
 @import "misc/bootstrap-tabs";
 @import "misc/paper";
 @import "partials/jumbotron";
@@ -22,10 +23,13 @@
 @import "partials/user-panel";
 @import "partials/twb-nav";
 @import "partials/panel";
+@import "partials/material-read";
 @import "bible";
 @import "game-quiz";
 @import "news";
 @import "spirit";
+@import "topic";
+@import "diary";
 
 @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css";
 

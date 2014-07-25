@@ -48,6 +48,12 @@ html.han-biaodian-pro-cns blockquote :not(:lang(zh)) {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.readable {
+  line-height: 2.1;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
 .preview {
   @include font-size(26px);
   line-height: 2.1;

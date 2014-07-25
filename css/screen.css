@@ -60,6 +60,12 @@ html.han-biaodian-pro-cns blockquote :not(:lang(zh)) {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.readable {
+  line-height: 2.1;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
 .preview {
   font-size: 26px;
   font-size: 1.625rem;
@@ -839,10 +845,6 @@ article.news p {
 
 .panel-default {
   border: 1px solid #96d9f8;
-  /*.tab-content {
-    background: rgba($twb-white, .5);
-    border: 1px solid $twb-main;
-  }*/
 }
 .panel-default h4 > a {
   color: #036aa5;
@@ -865,6 +867,7 @@ article.news p {
 .panel-default .panel-heading + .panel-collapse > .panel-body .img-thumbnail {
   padding: 5px;
   margin: 0 10px 10px 0;
+  max-height: 120px;
 }
 
 .panel-heading .accordion-toggle:after {
@@ -918,7 +921,7 @@ article.news p {
 .tab-content .img-thumbnail {
   padding: 5px;
   margin: 0 0 10px 10px;
-  max-height: 160px;
+  max-height: 120px;
 }
 
 footer {
@@ -1376,8 +1379,16 @@ ul.user-panel h2 {
   }
 }
 
+#container.bible.with-paper {
+  background: white;
+}
+
 #container.bible {
   background: #f1f8fe;
+}
+#container.bible .bookmark {
+  display: inline-block;
+  width: 145px;
 }
 #container.bible .layout {
   margin: -10px;
@@ -1489,6 +1500,7 @@ ul.user-panel h2 {
 
 #diary .twb-box {
   background: transparent;
+  padding: 8px;
 }
 #diary .panel {
   background: transparent;

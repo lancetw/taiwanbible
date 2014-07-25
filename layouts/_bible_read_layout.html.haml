@@ -7,13 +7,23 @@
   %body
     = render :partial => "/templates/noie"
     #wrapper.page
-      #container.bible.with-paper
+      #container.bible
         = render :partial => "/templates/menu"
         /= render :partial => "/templates/header"
         = render :partial => "/templates/sidebar"
         %main
           = yield
         %aside.right(name="right")
+          .text-center
+            .bookmark
+              %select.form-control
+                %option 設定第 1 章書籤
+                %option 1
+                %option 2
+                %option 3
+                %option 4
+                %option 5
+                %option 6
           = render :partial => "/templates/chapter_list"
     = render :partial => "/templates/footer"
     = render :partial => "/templates/script"

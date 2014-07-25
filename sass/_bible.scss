@@ -116,11 +116,16 @@
 }
 
 #container.bible.with-paper {
-  //background: $twb-white;
+  background: $twb-white;
 }
 
 #container.bible {
   background: $twb-light;
+
+  .bookmark {
+    display: inline-block;
+    width: 145px;
+  }
 
   .layout {
     margin: -10px;
@@ -215,3 +220,4 @@
     }
   }
 }
+

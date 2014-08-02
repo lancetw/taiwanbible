@@ -73,6 +73,7 @@ require([
   'bible',
   'nav',
   'search',
+  'game-books',
 
 ],function(angular) {
   'use strict';

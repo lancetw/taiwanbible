@@ -170,3 +170,11 @@ $color-type-4: hsla(0, 100%, 70%, 1);
     background: rgba($color-type-4, .5);
   }
 }
+
+
+#mblog-new {
+  .btn {
+    margin-bottom: 12px;
+    @include font-size(26px);
+  }
+}

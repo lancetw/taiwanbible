@@ -1,4 +1,26 @@
 - content_for(:title, '聖經書櫃')
 
-#game-books
-  .layout
+#game-books.text-center
+
+  #gift-receive.text-center
+    .gift
+      %span.fa.fa-gift
+      %h3 領取本日書卷
+
+  #gift-book.text-center
+    .book.hide
+      %h3 本日書卷
+      .paper.paper-white.paper-curve-vert
+        %a(href="/bible/book.html")
+          %span.fa.fa-book
+        %p.text-center 創世紀
+        %p.text-center （共五十章）
+
+  %hr
+
+  %h2 分享禮物
+  .paper.paper-white
+    %a(href="#") 選擇好友
+  %h2 領取他人送的禮物書
+  .paper.paper-white
+    %a(href="#") 接收禮物

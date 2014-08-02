@@ -1,0 +1,25 @@
+#game-books {
+  .gift {
+    background: rgba($twb-white, 1);
+    @include font-size(330px);
+    color: rgba($twb-red, .66);
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid rgba($twb-red, .3);
+    margin: 20px auto;
+    padding: 10px 0;
+    width: 260px;
+  }
+}
+
+#gift-book {
+  margin: 20px auto;
+  width: 260px;
+
+  .book .paper {
+    a {
+      @include font-size(280px);
+      color: rgba($twb-yellow, .66);
+    }
+  }
+}

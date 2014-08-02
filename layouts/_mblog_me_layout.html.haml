@@ -7,13 +7,13 @@
   %body
     = render :partial => "/templates/noie"
     #wrapper.page
-      #container.bible
+      #container
         = render :partial => "/templates/menu"
-        /= render :partial => "/templates/header"
+        = render :partial => "/templates/header"
         = render :partial => "/templates/sidebar"
         %main
           = yield
         %aside.right(name="right")
-          = render :partial => "/templates/book_list"
+          = render :partial => "/templates/mblog_new"
     = render :partial => "/templates/footer"
     = render :partial => "/templates/script"

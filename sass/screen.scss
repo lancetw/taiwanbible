@@ -30,6 +30,7 @@
 @import "spirit";
 @import "topic";
 @import "diary";
+@import "mblog";
 
 @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css";
 
@@ -45,10 +46,6 @@ html, body {
 
 html {
   font-size: 62.5%;
-
-  /*@include breakpoint($desktop-bp) {
-
-  }*/
 }
 
 h2 {
@@ -71,5 +68,4 @@ a {
   overflow: hidden;
   background: $twb-sub;
   padding-bottom: 20px;
-  //@include background( linear-gradient(top, rgba($twb-main, 1), rgba($twb-white, 1), rgba($twb-sub, 1)) );
 }

@@ -820,7 +820,7 @@ article.news p {
 }
 article.news .img-box {
   position: relative;
-  max-height: 160px;
+  max-height: 180px;
   overflow: hidden;
 }
 article.news .img-box img {
@@ -1129,7 +1129,6 @@ ul.user-panel h2 {
   width: 100%;
 }
 .material-read .panel-img {
-  max-height: 160px;
   overflow: hidden;
   text-align: center;
 }
@@ -1484,6 +1483,10 @@ ul.user-panel h2 {
   font-size: 2.25rem;
 }
 
+#news .panel-img {
+  max-height: 160px;
+}
+
 .spirit-today .btn.plain {
   margin: 8px;
 }
@@ -1534,6 +1537,139 @@ ul.user-panel h2 {
   background: rgba(33, 117, 156, 0.1);
 }
 
+#mblog .twb-box {
+  background: transparent;
+  padding: 8px;
+}
+#mblog .panel {
+  background: transparent;
+}
+#mblog .panel.panel-default {
+  background: transparent;
+}
+#mblog .panel-type {
+  position: relative;
+  top: 0;
+  right: 0;
+  font-size: 26px;
+  font-size: 1.625rem;
+  color: white;
+  background: rgba(33, 117, 156, 0.5);
+  border-top-right-radius: 3px;
+  padding: 4px 8px 6px 8px;
+}
+#mblog .panel-heading {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+#mblog .panel-verse {
+  font-size: 26px;
+  font-size: 1.625rem;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 18px;
+  border-bottom: 1px solid rgba(33, 117, 156, 0.1);
+}
+#mblog .img-avatar {
+  background: rgba(255, 255, 255, 0.5);
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#mblog .panel-body {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: rgba(33, 117, 156, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+}
+#mblog .panel-footer {
+  font-size: 22px;
+  font-size: 1.375rem;
+  border-top: none;
+  padding: 3px 0;
+}
+#mblog .panel-footer p {
+  text-align: center;
+  margin: 0;
+}
+#mblog .type-1 .panel {
+  border-color: rgba(255, 153, 0, 0.5);
+}
+#mblog .type-1 .panel-type {
+  background: rgba(255, 153, 0, 0.5);
+}
+#mblog .type-1 .panel-verse {
+  border-bottom: 1px solid rgba(255, 153, 0, 0.1);
+}
+#mblog .type-1 .panel-footer {
+  color: white;
+  background: rgba(255, 153, 0, 0.7);
+}
+#mblog .type-2 .panel {
+  border-color: rgba(51, 153, 255, 0.5);
+}
+#mblog .type-2 .panel-type {
+  background: rgba(51, 153, 255, 0.5);
+}
+#mblog .type-2 .panel-verse {
+  border-bottom: 1px solid rgba(51, 153, 255, 0.1);
+}
+#mblog .type-2 .panel-footer {
+  color: white;
+  background: rgba(51, 153, 255, 0.7);
+}
+#mblog .type-3 .panel {
+  border-color: rgba(0, 127, 128, 0.5);
+}
+#mblog .type-3 .panel-type {
+  background: rgba(0, 127, 128, 0.5);
+}
+#mblog .type-3 .panel-verse {
+  border-bottom: 1px solid rgba(0, 127, 128, 0.1);
+}
+#mblog .type-3 .panel-footer {
+  color: white;
+  background: rgba(0, 127, 128, 0.7);
+}
+#mblog .type-4 .panel {
+  border-color: rgba(255, 102, 102, 0.5);
+}
+#mblog .type-4 .panel-type {
+  background: rgba(255, 102, 102, 0.5);
+}
+#mblog .type-4 .panel-verse {
+  border-bottom: 1px solid rgba(255, 102, 102, 0.1);
+}
+#mblog .type-4 .panel-footer {
+  color: white;
+  background: rgba(255, 102, 102, 0.7);
+}
+
+#mblog-nav .btn {
+  margin-bottom: 12px;
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+#mblog-nav .btn-type-1 {
+  color: white;
+  background: rgba(255, 153, 0, 0.5);
+}
+#mblog-nav .btn-type-2 {
+  color: white;
+  background: rgba(51, 153, 255, 0.5);
+}
+#mblog-nav .btn-type-3 {
+  color: white;
+  background: rgba(0, 127, 128, 0.5);
+}
+#mblog-nav .btn-type-4 {
+  color: white;
+  background: rgba(255, 102, 102, 0.5);
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -1541,9 +1677,6 @@ html, body {
 
 html {
   font-size: 62.5%;
-  /*@include breakpoint($desktop-bp) {
-
-  }*/
 }
 
 h2 {

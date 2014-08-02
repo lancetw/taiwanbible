@@ -1,0 +1,76 @@
+- content_for(:title, '我的部落格')
+
+.text-center
+  .btn-group
+    %a.btn.btn-info.btn-lg(href="mblog.html") 全民塗鴉牆
+    %a.btn.btn-info.btn-lg.active(href="me.html") 我的部落格
+%hr
+
+#mblog.material-read.two-line
+
+  .twb-box.type-1
+    .panel.panel-default
+      .panel-type
+        快人快語
+      .panel-heading
+        %h2 test
+        .img-avatar
+          %img(src="http://placekitten.com/120/120")
+      .panel-verse
+      .panel-body
+        %p
+          = zh_lorem_paragraphs(1 + rand(3))
+      .panel-footer
+        %p 3 人哈利路亞．2 人阿門．1 人回應
+
+  .twb-box.type-2
+    .panel.panel-default
+      .panel-type
+        生活分享
+      .panel-heading
+        %h2 test
+        .img-avatar
+          %img(src="http://placekitten.com/120/120")
+      .panel-verse
+        %p
+          = zh_lorem_paragraph
+      .panel-body
+        %p
+          = zh_lorem_paragraphs(1 + rand(3))
+      .panel-footer
+        %p 3 人哈利路亞．2 人阿門．1 人回應
+
+  .twb-box.type-3
+    .panel.panel-default
+      .panel-type
+        愛秀圖片
+      .panel-heading
+        %h2 test
+        .img-avatar
+          %img(src="http://placekitten.com/120/120")
+      .panel-verse
+      .panel-body
+        %p
+          = zh_lorem_paragraphs(1 + rand(3))
+      .panel-img
+        %img.img-responsive(src="http://placekitten.com/800/1300")
+      .panel-footer
+        %p 3 人哈利路亞．2 人阿門．1 人回應
+
+  .twb-box.type-4
+    .panel.panel-default
+      .panel-type
+        我心經句
+      .panel-heading
+        %h2 test
+        .img-avatar
+          %img(src="http://placekitten.com/120/120")
+      .panel-verse
+        %p
+          :erb
+            哥林多前書 1:3 願恩惠、平安從神我們的父並主耶穌基督歸與你們。
+      .panel-body
+        %p
+          = zh_lorem_paragraphs(1 + rand(3))
+      .panel-footer
+        %p 3 人哈利路亞．2 人阿門．1 人回應

@@ -49,7 +49,7 @@ require(['jquery'], function() {
       $('#wrapper').removeClass('show-' + _reverse(direct));
     }
 
-    $('html, body').animate({ scrollTop: $('header.jumbotron').outerHeight() }, 800);
+    $('html, body').animate({ scrollTop: $('header.jumbotron').outerHeight() }, 350);
     //$(this).scrollTop( $('header.jumbotron').outerHeight() );
   }
 

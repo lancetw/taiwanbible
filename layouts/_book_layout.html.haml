@@ -4,7 +4,7 @@
   %head
     %title= yield(:title)
     = render :partial => "/templates/head"
-  %body
+  %body{:class => yield(:bodyClass)}
     = render :partial => "/templates/noie"
     #wrapper.page
       #container.bible

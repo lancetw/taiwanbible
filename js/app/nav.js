@@ -1,6 +1,11 @@
 require(['jquery'], function() {
 
   $(function() {
+    if ( $('body').hasClass('scrollToContent') )
+      $('html, body').animate({ scrollTop: $('header.jumbotron').outerHeight() }, 800);
+  });
+
+  $(function() {
     $('a[href="#left"]').click(function() {
       toggleNav('left', $(this));
     });
@@ -44,7 +49,8 @@ require(['jquery'], function() {
       $('#wrapper').removeClass('show-' + _reverse(direct));
     }
 
-    $(this).scrollTop( $('header.jumbotron').outerHeight() );
+    $('html, body').animate({ scrollTop: $('header.jumbotron').outerHeight() }, 800);
+    //$(this).scrollTop( $('header.jumbotron').outerHeight() );
   }
 
 });

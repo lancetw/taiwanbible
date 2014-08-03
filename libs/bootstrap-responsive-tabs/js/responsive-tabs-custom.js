@@ -143,8 +143,8 @@ fakewaffle.bindTabToCollapse = function () {
 
     collapse.on('shown.bs.collapse', function (e) {
         var id = $(e.target).context.id;
-
-        $('html, body').animate({ scrollTop: $("#" + id).offset().top }, 800);
+        if ( $('.nav-tabs').is(":hidden") )
+            $('html, body').animate({ scrollTop: $("#" + id).offset().top }, 800);
     });
 
 

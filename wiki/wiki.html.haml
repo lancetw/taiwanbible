@@ -1,0 +1,20 @@
+- content_for(:title, '聖經知識庫')
+- content_for(:bodyClass, 'scrollToContent')
+
+.text-center
+  .btn-group
+    %a.btn.btn-info.btn-lg.active(href="wiki.html") 聖經知識庫
+    %a.btn.btn-info.btn-lg(href="qa.html") 福音 Q&A
+
+%hr
+
+#wiki
+  .paper.paper-white.paper-curl
+    %h2 歡迎光臨台灣聖經網聖經知識庫
+    %p 我們在這裡希望結合眾人的力量，一起來豐富大家對基督教及聖經的知識。
+    %p 請注意! 本知識庫類似維基模式，知識內容由網友自行發佈，我們並無法保證一定正確或符合基督教信仰，請在使用時小心求證。
+  %h3.text-center
+    .label.label-info 目前知識庫裡共包含了
+    .label.label-warning 6,010 條知識
+    .label.label-primary 以及
+    .label.label-success 19,119 條解答

@@ -23,26 +23,27 @@ require(['jquery'], function() {
     }
   }
 
+  var speed = 310;
   function toggleNav(direct, _this) {
     if ($('#wrapper').hasClass('show-' + direct)) {
       $('#wrapper').removeClass('show-' + direct);
       if (direct == 'left') {
         _this.removeClass('fa-chevron-left').addClass('fa-bars');
-        $('a[href="#right"]').show('fast');
+        $('a[href="#right"]').show(speed);
       }
       if (direct == 'right') {
         _this.removeClass('fa-chevron-right').addClass('fa-plus-square');
-        $('a[href="#left"]').show('fast');
+        $('a[href="#left"]').show(speed);
       }
     } else {
       $('#wrapper').addClass('show-' + direct);
       if (direct == 'left') {
         _this.removeClass('fa-bars').addClass('fa-chevron-left');
-        $('a[href="#right"]').hide('fast');
+        $('a[href="#right"]').hide(speed);
       }
       if (direct == 'right') {
         _this.removeClass('fa-plus-square').addClass('fa-chevron-right');
-        $('a[href="#left"]').hide('fast');
+        $('a[href="#left"]').hide(speed);
       }
     }
     if ($('#wrapper').hasClass('show-' + _reverse(direct))) {

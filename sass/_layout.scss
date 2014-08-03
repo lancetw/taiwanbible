@@ -21,7 +21,7 @@ header, footer {
 }
 
 aside.left, main, aside.right {
-  @include transition (all 200ms ease-in-out);
+  @include transition (all 310ms ease-in-out);
   padding-top: 12px;
 }
 

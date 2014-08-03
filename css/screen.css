@@ -128,10 +128,10 @@ header, footer {
 }
 
 aside.left, main, aside.right {
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -moz-transition: all 310ms ease-in-out;
+  -o-transition: all 310ms ease-in-out;
+  -webkit-transition: all 310ms ease-in-out;
+  transition: all 310ms ease-in-out;
   padding-top: 12px;
 }
 
@@ -1731,6 +1731,31 @@ ul.user-panel h2 {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+#wiki .label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+#wiki .qa .qa-link {
+  padding: 0;
+  margin: 0;
+}
+#wiki .qa .qa-link li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#wiki .qa .qa-link ul {
+  font-size: 26px;
+  font-size: 1.625rem;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+#wiki .qa .qa-link ul li {
+  margin-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(140, 140, 140, 0.5);
 }
 
 html, body {

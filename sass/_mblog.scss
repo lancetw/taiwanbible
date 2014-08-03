@@ -18,6 +18,14 @@ $color-type-4: hsla(0, 100%, 70%, 1);
     background: transparent;
   }
 
+  .panel-date {
+    @include font-size(22px);
+    text-align: right;
+    color: rgba($twb-grey, 1);
+    background: rgba($twb-white, .9);
+    padding: 8px;
+  }
+
   .panel-type {
     position: relative;
     top: 0;

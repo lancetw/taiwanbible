@@ -1,0 +1,125 @@
+- content_for(:title, '基督徒怎麼想？')
+- content_for(:bodyClass, 'scrollToContent')
+
+.text-center
+  .btn-group
+    %a.btn.btn-info.btn-lg.active(href="vote.html") 投票區
+    %a.btn.btn-info.btn-lg(href="history.html") 歷史投票
+
+%hr
+
+#vote.material-read.two-line
+  .twb-box
+    .panel.panel-primary
+      .panel-heading 澎湖空難，你覺得政府的災後處理方式
+      .panel-body
+        .text-center
+          .btn-group-vertical(data-toggle="buttons")
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="1")
+                很不錯了
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="2")
+                有待加強
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="3")
+                不及格
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="4")
+                不知道 / 沒意見
+      .panel-footer.clearfix
+        .text-center
+          %a.btn.btn-success.btn-lg(href="vote_result.html") 參加投票
+          %a.btn.btn-default.btn-lg(href="vote_result.html") 直接看結果
+      .panel-body.panel-footer
+        %ul.vote-info
+          %li 投票開始日期: 今天
+          %li 投票結束日期: 2014/08/14 (離投票截止還有 10 天)
+          %li 目前參與投票人數: 2 人
+          %li 目前參與回應的人數: 0 人
+
+  .twb-box
+    .panel.panel-primary
+      .panel-heading 小額付款種類多，你在便利商店最常用哪種方式付款?
+      .panel-body
+        .text-center
+          .btn-group-vertical(data-toggle="buttons")
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="1")
+                現金
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="2")
+                悠遊卡
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="3")
+                一卡通
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="4")
+                其他方式
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="5")
+                不知道 / 不適用
+      .panel-footer.clearfix
+        .text-center
+          %h2
+            .label.label-info 您已經投過票
+          %a.btn.btn-default.btn-lg(href="vote_result.html") 直接看結果
+      .panel-body.panel-footer
+        %ul.vote-info
+          %li 投票開始日期: 大前天
+          %li 投票結束日期: 2014/08/10 (離投票截止還有 6 天)
+          %li 目前參與投票人數: 130 人
+          %li 目前參與回應的人數: 4 人
+
+  .twb-box
+    .panel.panel-primary
+      .panel-heading 封街路跑是否該經過地方主管機關審核?
+      .panel-body
+        .text-center
+          .btn-group-vertical(data-toggle="buttons")
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="1")
+                應該，需經過審核
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="2")
+                不應該，只要申請路權就能辦
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="3")
+                不知道 / 沒意見
+      .panel-footer.clearfix
+        .text-center
+          %a.btn.btn-success.btn-lg(href="vote_result.html") 參加投票
+          %a.btn.btn-default.btn-lg(href="vote_result.html") 直接看結果
+      .panel-body.panel-footer
+        %ul.vote-info
+          %li 投票開始日期: 2014/07/29
+          %li 投票結束日期: 2014/08/08 (離投票截止還有 4 天)
+          %li 目前參與投票人數: 138 人
+          %li 目前參與回應的人數: 4 人
+
+  .twb-box
+    .panel.panel-primary
+      .panel-heading 請問你是否支持12年國教？
+      .panel-body
+        .text-center
+          .btn-group-vertical(data-toggle="buttons")
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="1")
+                支持
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="2")
+                不支持
+            %label.btn.btn-default.btn-lg.choice
+              %input#opt1(type="radio" name="C" value="3")
+                不知道 / 沒意見
+      .panel-footer.clearfix
+        .text-center
+          %a.btn.btn-success.btn-lg(href="vote_result.html") 參加投票
+          %a.btn.btn-default.btn-lg(href="vote_result.html") 直接看結果
+      .panel-body.panel-footer
+        %ul.vote-info
+          %li 投票開始日期: 2014/07/26
+          %li 投票結束日期: 2014/08/06 (離投票截止還有 2 天)
+          %li 目前參與投票人數: 149 人
+          %li 目前參與回應的人數: 5 人
+

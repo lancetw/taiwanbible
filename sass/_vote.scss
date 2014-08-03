@@ -1,0 +1,25 @@
+#vote {
+
+  .twb-box {
+    padding: 12px;
+  }
+
+  .panel-heading {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .panel-body {
+    margin: 0 auto;
+  }
+
+  .panel-footer {
+    margin: 0 auto;
+  }
+
+  .vote-info {
+    @include noList;
+    @include font-size(22px);
+    color: rgba($twb-grey, .9);
+  }
+}

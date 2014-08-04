@@ -1,7 +1,40 @@
 #wiki {
+
+  h3.user {
+    margin-top: 6px;
+  }
+
   .label {
     display: inline-block;
     margin-bottom: 6px;
+  }
+
+  .anno {
+    padding: 16px;
+  }
+
+  .cat {
+    margin-bottom: 12px;
+    @include font-size(32px);
+  }
+
+  .paper {
+    @include font-size(26px);
+  }
+
+  .badge {
+    margin-top: 6px;
+    @include font-size(24px);
+  }
+
+  .img-avatar {
+    background: rgba($twb-white, .5);
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    margin: 0 auto;
   }
 
   .qa {
@@ -15,6 +48,10 @@
           margin-top: 8px;
           padding-bottom: 8px;
           border-bottom: 1px dashed rgba($twb-grey, .5);
+          a {
+            display: block;
+            font-weight: bold;
+          }
         }
       }
     }

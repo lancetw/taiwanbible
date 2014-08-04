@@ -12,11 +12,32 @@
 is assigned for you this may be adjustable in the near future */
 @import url(../libs/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css);
 @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css";
+h1 {
+  margin-top: 0;
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 30px;
+}
+
 h2 {
   margin-top: 0;
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 26px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 22px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 18px;
 }
 
 .panel-default h4 {
@@ -1686,19 +1707,19 @@ ul.user-panel h2 {
 }
 #mblog-nav .btn-type-1 {
   color: white;
-  background: rgba(255, 153, 0, 0.5);
+  background: rgba(255, 153, 0, 0.7);
 }
 #mblog-nav .btn-type-2 {
   color: white;
-  background: rgba(51, 153, 255, 0.5);
+  background: rgba(51, 153, 255, 0.7);
 }
 #mblog-nav .btn-type-3 {
   color: white;
-  background: rgba(0, 127, 128, 0.5);
+  background: rgba(0, 127, 128, 0.7);
 }
 #mblog-nav .btn-type-4 {
   color: white;
-  background: rgba(255, 102, 102, 0.5);
+  background: rgba(255, 102, 102, 0.7);
 }
 
 #mblog-new .btn {
@@ -1756,9 +1777,38 @@ ul.user-panel h2 {
   list-style: none;
 }
 
+#wiki h3.user {
+  margin-top: 6px;
+}
 #wiki .label {
   display: inline-block;
   margin-bottom: 6px;
+}
+#wiki .anno {
+  padding: 16px;
+}
+#wiki .cat {
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-size: 2rem;
+}
+#wiki .paper {
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+#wiki .badge {
+  margin-top: 6px;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+#wiki .img-avatar {
+  background: rgba(255, 255, 255, 0.5);
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  margin: 0 auto;
 }
 #wiki .qa .qa-link {
   padding: 0;
@@ -1779,6 +1829,10 @@ ul.user-panel h2 {
   margin-top: 8px;
   padding-bottom: 8px;
   border-bottom: 1px dashed rgba(140, 140, 140, 0.5);
+}
+#wiki .qa .qa-link ul li a {
+  display: block;
+  font-weight: bold;
 }
 
 html, body {

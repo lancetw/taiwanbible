@@ -2,7 +2,7 @@ require(['jquery'], function() {
 
   $(function() {
     if ( $('body').hasClass('scrollToContent') )
-      $('html, body').animate({ scrollTop: $('header.jumbotron').outerHeight() }, 800);
+      $('html, body').animate({ scrollTop: $('header.jumbotron').outerHeight() }, 310);
   });
 
   $(function() {

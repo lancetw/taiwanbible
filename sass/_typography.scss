@@ -1,7 +1,25 @@
+h1 {
+  margin-top: 0;
+  @include font-size(40px);
+  line-height: 30px;
+}
+
 h2 {
   margin-top: 0;
   @include font-size(36px);
   line-height: 26px;
+}
+
+h3 {
+  margin-top: 0;
+  @include font-size(32px);
+  line-height: 22px;
+}
+
+h4 {
+  margin-top: 0;
+  @include font-size(28px);
+  line-height: 18px;
 }
 
 .panel-default h4 {

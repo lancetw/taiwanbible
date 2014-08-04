@@ -128,10 +128,10 @@ header, footer {
 }
 
 aside.left, main, aside.right {
-  -moz-transition: all 310ms ease-in-out;
-  -o-transition: all 310ms ease-in-out;
-  -webkit-transition: all 310ms ease-in-out;
-  transition: all 310ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   padding-top: 12px;
 }
 
@@ -175,6 +175,9 @@ aside.right {
   padding-left: 1.3888888889%;
   padding-right: 1.3888888889%;
   margin-right: -100%;
+}
+.show-left aside.right {
+  margin-right: -200%;
 }
 .show-right aside.right {
   margin-right: 0;
@@ -1170,6 +1173,13 @@ ul.user-panel h2 {
   }
 }
 
+#container.bible aside.left, #container.bible main, #container.bible aside.right {
+  -moz-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
 #container.bible aside.left {
   -moz-transform: rotate3d(0, 0, 0, 0);
   -ms-transform: rotate3d(0, 0, 0, 0);
@@ -1211,6 +1221,9 @@ ul.user-panel h2 {
   padding-right: 1.3888888889%;
   margin-right: -100%;
 }
+.show-left #container.bible aside.right {
+  margin-right: -200%;
+}
 .show-right #container.bible aside.right {
   margin-right: 0;
 }
@@ -1228,7 +1241,7 @@ ul.user-panel h2 {
     margin-left: -37.5%;
   }
   .show-right #container.bible aside.left {
-    margin-left: -37.5%;
+    margin-left: -75%;
   }
 
   #container.bible main {
@@ -1239,29 +1252,27 @@ ul.user-panel h2 {
   }
   .show-right #container.bible main {
     margin-right: 0;
-    margin-left: -62.5%;
+    margin-left: -37.5%;
   }
 
   #container.bible aside.right {
-    width: 62.5%;
+    width: 37.5%;
     float: right;
     padding-left: 1.25%;
     padding-right: 1.25%;
+    margin-right: -37.5%;
   }
-  .show-right #container.bible aside.right {
-    margin-right: 0;
+  .show-left #container.bible aside.right {
+    margin-right: -75%;
   }
-}
-@media only screen and (min-width: 740px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .show-right #container.bible aside.right {
     margin-left: 0;
-    width: 50%;
+    width: 37.5%;
     float: right;
     padding-left: 1.25%;
     padding-right: 1.25%;
   }
 }
-
 @media (min-width: 980px) {
   #container.bible [href="#left"] {
     visibility: hidden;
@@ -1291,11 +1302,11 @@ ul.user-panel h2 {
 }
 @media only screen and (min-width: 980px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   #container.bible aside.left {
-    width: 33.3333333333%;
+    width: 25%;
     float: left;
     padding-left: 0.8333333333%;
     padding-right: 0.8333333333%;
-    margin-left: -33.3333333333%;
+    margin-left: -25%;
   }
 }
 @media (min-width: 980px) {
@@ -1306,7 +1317,18 @@ ul.user-panel h2 {
     padding-right: 0.8333333333%;
     margin-left: 0;
   }
+}
+@media only screen and (min-width: 980px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .show-right #container.bible aside.left {
+    width: 25%;
+    float: left;
+    padding-left: 0.8333333333%;
+    padding-right: 0.8333333333%;
+    margin-left: -50%;
+  }
+}
 
+@media (min-width: 980px) {
   #container.bible main {
     width: 50%;
     float: left;
@@ -1334,11 +1356,11 @@ ul.user-panel h2 {
 }
 @media only screen and (min-width: 980px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .show-right #container.bible main {
-    width: 66.6666666667%;
+    width: 100%;
     float: left;
     padding-left: 0.8333333333%;
     padding-right: 0.8333333333%;
-    margin-left: -33.3333333333%;
+    margin-left: -25%;
   }
 }
 
@@ -1353,11 +1375,11 @@ ul.user-panel h2 {
 }
 @media only screen and (min-width: 980px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   #container.bible aside.right {
-    width: 33.3333333333%;
+    width: 25%;
     float: right;
     padding-left: 0.8333333333%;
     padding-right: 0.8333333333%;
-    margin-right: -41.6666666667%;
+    margin-right: -25%;
   }
 }
 @media (min-width: 980px) {
@@ -1371,7 +1393,8 @@ ul.user-panel h2 {
 }
 @media only screen and (min-width: 980px) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .show-right #container.bible aside.right {
-    width: 33.3333333333%;
+    margin-left: 0;
+    width: 25%;
     float: right;
     padding-left: 0.8333333333%;
     padding-right: 0.8333333333%;

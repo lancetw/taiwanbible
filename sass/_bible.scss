@@ -1,4 +1,8 @@
 
+#container.bible aside.left, #container.bible main, #container.bible aside.right {
+  @include transition (all 100ms ease-in-out);
+}
+
 #container.bible aside.left {
   @include transform(rotate3d(0, 0, 0, 0));
   @include span($mobile-columns);
@@ -19,6 +23,7 @@
   @include transform(rotate3d(0, 0, 0, 0));
   @include span($mobile-columns last);
   margin-right: -100%;
+  .show-left & { margin-right: - span($mobile-columns) * 2; }
   .show-right & {
     margin-right: 0;
   }
@@ -33,23 +38,24 @@
   #container.bible aside.left {
     @include span(3);
     margin-left: - span(3);
-    .show-right & { margin-left: - span(3); }
+    .show-right & { margin-left: - span(6); }
   }
   #container.bible main {
     @include span(8);
     .show-right & {
       margin-right: 0;
-      margin-left: - span(5);
+      margin-left: - span(3);
     }
   }
   #container.bible aside.right {
-    @include span(5 last);
+    @include span(3 last);
+    margin-right: - span(3);
+    .show-left & {
+      margin-right: - span(6);
+    }
     .show-right & {
-      margin-right: 0;
-      @include ipad(landscape) {
-        margin-left: 0;
-        @include span(4 last);
-      }
+      margin-left: 0;
+      @include span(3 last);
     }
   }
 
@@ -71,12 +77,16 @@
     @include span(3);
     margin-left: 0;
     @include ipad(landscape) {
-      @include span(4);
-      margin-left: - span(4);
+      @include span(3);
+      margin-left: - span(3);
     }
     .show-right & {
       @include span(3);
       margin-left: 0;
+      @include ipad(landscape) {
+        @include span(3);
+        margin-left: - span(6);
+      }
     }
   }
   #container.bible main {
@@ -89,8 +99,8 @@
       margin-left: 0;
       @include span(6);
       @include ipad(landscape) {
-        @include span(8);
-        margin-left: - span(4);
+        @include span(12);
+        margin-left: - span(3);
       }
     }
   }
@@ -98,14 +108,15 @@
     margin-right: 0;
     @include span(3 last);
     @include ipad(landscape) {
-      @include span(4 last);
-      margin-right: - span(5);
+      @include span(3 last);
+      margin-right: - span(3);
     }
     .show-right & {
       margin-right: 0;
       @include span(3 last);
       @include ipad(landscape) {
-        @include span(4 last);
+        margin-left: 0;
+        @include span(3 last);
       }
     }
   }

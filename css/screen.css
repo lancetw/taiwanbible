@@ -841,6 +841,8 @@ article.news {
 article.news p {
   font-size: 26px;
   font-size: 1.625rem;
+  line-height: 2.1;
+  margin: 12px;
 }
 article.news .img-box {
   position: relative;
@@ -854,9 +856,6 @@ article.news .img-box img {
   display: inline-block;
   vertical-align: middle;
 }
-article.news p {
-  margin: 12px;
-}
 
 .nav > li > a:hover, .nav > li > a:focus {
   color: rgba(3, 106, 165, 0.9);
@@ -865,6 +864,12 @@ article.news p {
 
 #news-list .panel {
   margin-bottom: 10px;
+}
+
+#sponsor {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 2.1;
 }
 
 .panel-default {
@@ -885,6 +890,9 @@ article.news p {
   background: linear-gradient(to bottom, #96d9f8, #f0faff, rgba(255, 255, 255, 0.5));
 }
 .panel-default .panel-heading + .panel-collapse > .panel-body {
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 2.1;
   background: rgba(241, 248, 254, 0.5);
   border-top: none;
 }
@@ -938,6 +946,9 @@ article.news p {
 }
 
 .tab-content {
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 2.1;
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid #96d9f8;
   margin-bottom: 24px;
@@ -1784,8 +1795,25 @@ ul.user-panel h2 {
   display: inline-block;
   margin-bottom: 6px;
 }
+#wiki .ctrl {
+  font-weight: bold;
+}
+#wiki .ctrl .btn {
+  margin-right: 7px;
+}
 #wiki .anno {
   padding: 16px;
+}
+#wiki .anno .badge {
+  margin-top: 6px;
+  margin-right: 12px;
+  font-size: 32px;
+  font-size: 2rem;
+}
+#wiki .comment {
+  padding: 16px;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 #wiki .cat {
   margin-bottom: 12px;
@@ -1795,6 +1823,49 @@ ul.user-panel h2 {
 #wiki .paper {
   font-size: 26px;
   font-size: 1.625rem;
+  color: rgba(59, 58, 53, 0.9);
+  line-height: 2.1;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+#wiki .paper-ribbon {
+  -moz-box-shadow: 0 0 10px #888888;
+  -webkit-box-shadow: 0 0 10px #888888;
+  box-shadow: 0 0 10px #888888;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  overflow: hidden;
+}
+#wiki .ribbon {
+  white-space: nowrap;
+  position: absolute;
+  right: -72px;
+  top: 21px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-box-shadow: 0 0 10px #888888;
+  -webkit-box-shadow: 0 0 10px #888888;
+  box-shadow: 0 0 10px #888888;
+  background-color: #a00;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#wiki .ribbon span {
+  letter-spacing: 4px;
+  text-shadow: 0 0 5px #444444;
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 26px;
+  margin: 0;
+  padding: 3px 66px;
+  text-align: center;
+  text-decoration: none;
 }
 #wiki .badge {
   margin-top: 6px;
@@ -1806,7 +1877,7 @@ ul.user-panel h2 {
   width: 86px;
   height: 86px;
   border-radius: 50%;
-  border: none;
+  border: 2px solid #EEE;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -1833,6 +1904,16 @@ ul.user-panel h2 {
 #wiki .qa .qa-link ul li a {
   display: block;
   font-weight: bold;
+}
+
+#about .panel-default .panel-body img {
+  float: none;
+  padding: 0;
+  margin: 0;
+}
+#about .panel-body {
+  font-size: 26px;
+  font-size: 1.625rem;
 }
 
 html, body {

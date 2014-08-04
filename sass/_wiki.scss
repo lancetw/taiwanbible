@@ -9,8 +9,25 @@
     margin-bottom: 6px;
   }
 
+  .ctrl {
+    font-weight: bold;
+    .btn {
+      margin-right: 7px;
+    }
+  }
+
   .anno {
     padding: 16px;
+    .badge {
+      margin-top: 6px;
+      margin-right: 12px;
+      @include font-size(32px);
+    }
+  }
+
+  .comment {
+    padding: 16px;
+    @include font-size(24px);
   }
 
   .cat {
@@ -20,6 +37,44 @@
 
   .paper {
     @include font-size(26px);
+    color: rgba($twb-read, .9);
+    line-height: 2.1;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+
+  .paper-ribbon {
+    @include box-shadow( 0 0 10px #888 );
+    background: rgba($twb-white, .9);
+    border: none;
+    overflow: hidden;
+  }
+
+  .ribbon {
+    white-space: nowrap;
+    position: absolute;
+    right: -72px;
+    top: 21px;
+    @include transform( rotate(45deg) );
+    @include box-shadow( 0 0 10px #888 );
+
+    background-color: #a00;
+    overflow: hidden;
+    white-space: nowrap;
+    span {
+      letter-spacing: 4px;
+      @include text-shadow( 0 0 5px #444 );
+      border: 1px solid #faa;
+      color: #fff;
+      display: block;
+      font-weight: bold;
+      @include font-size(26px);
+      line-height: 26px;
+      margin: 0;
+      padding: 3px 66px;
+      text-align: center;
+      text-decoration: none;
+    }
   }
 
   .badge {
@@ -32,7 +87,7 @@
     width: 86px;
     height: 86px;
     border-radius: 50%;
-    border: none;
+    border: 2px solid #EEE;
     overflow: hidden;
     margin: 0 auto;
   }

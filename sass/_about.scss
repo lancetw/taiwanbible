@@ -1,0 +1,11 @@
+#about {
+  .panel-default .panel-body img {
+    float: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .panel-body {
+    @include font-size(26px);
+  }
+}

@@ -3,6 +3,8 @@ article.news {
 
   p {
     @include font-size(26px);
+    line-height: 2.1;
+    margin: 12px;
   }
 
   .img-box {
@@ -17,11 +19,6 @@ article.news {
       vertical-align: middle;
     }
   }
-
-  p {
-    margin: 12px;
-  }
-
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -33,4 +30,9 @@ article.news {
   .panel {
     margin-bottom: 10px;
   }
+}
+
+#sponsor {
+  @include font-size(27px);
+  line-height: 2.1;
 }

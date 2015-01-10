@@ -1,6 +1,6 @@
 ul.user-panel {
   @include noList;
-  background: rgba($twb-light, .5);
+  background: rgba($twb-light, 1);
   border: 5px solid $twb-main;
   @include font-size(26px);
   padding-bottom: 12px;
@@ -16,4 +16,13 @@ ul.user-panel {
     @include font-size(32px);
   }
 
+}
+
+ul.login-panel {
+  background: rgba($twb-light, 1);
+  @include noList;
+  padding: 24px !important;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
 }

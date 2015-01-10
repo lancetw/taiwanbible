@@ -1,0 +1,22 @@
+- content_for(:title, '認識朋友')
+- content_for(:bodyClass, 'scrollToContent')
+
+#friends.material-read
+  .twb-box
+    .panel
+      .panel-heading.text-center
+        認識黑熊
+      .panel-img
+        %a(href="#")
+          %img.img-avatar.text-center(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20090317-1237252612796.jpg&Size=800")
+      .panel-body
+        %p.preview
+          :plain
+            大家好! 我是黑熊 歡迎來到我在台灣聖經網的個人首頁
+
+
+      .panel-footer
+        .ctrl
+          %a.btn.btn-default.pull-right.clearfix 取消好友
+          %a.btn.btn-primary(href="msg.html") 傳訊
+          %a.btn.btn-success(href="sticons.html") 動作

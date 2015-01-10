@@ -1,0 +1,69 @@
+- content_for(:title, '朋友')
+- content_for(:bodyClass, 'scrollToContent')
+
+#friends
+  .text-center
+    .btn-group
+      %a.btn.btn-info.btn-lg.active(href="friends.html") 有誰加我？
+      %a.btn.btn-info.btn-lg(href="who.html") 我的介紹頁
+
+  .friend
+    .paper.paper-white
+      %a(href="/friends/who.html")
+        %img.img-avatar.pull-left(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20090317-1237252612796.jpg&Size=800")
+      %h3
+        %a(href="/friends/who.html")
+          黑熊
+          .label.label-info.pull-right
+            已是好友
+      %hr
+      %p.date
+        他 / 她加你的日期：2014.01.01
+      %hr
+      .ctrl
+        %a.btn.btn-default.pull-right.clearfix(href="who.html") 看好友
+        %a.btn.btn-primary(href="msg.html") 傳訊
+        %a.btn.btn-success(href="sticons.html") 動作
+
+  - (1..5).each do |i|
+
+    .friend
+      .paper.paper-white
+        %a(href="/friends/who.html")
+          %img.img-avatar.pull-left(src="http://placekitten.com/100/10#{i}")
+        %h3
+          %a(href="/friends/who.html")
+            =zh_lorem_name
+            .label.label-info.pull-right
+              已是好友
+        %hr
+        %p.date
+          他 / 她加你的日期：2014.01.01
+        %hr
+        .ctrl
+          %a.btn.btn-default.pull-right.clearfix(href="who.html") 看好友
+          %a.btn.btn-primary(href="msg.html") 傳訊
+          %a.btn.btn-success(href="sticons.html") 動作
+
+  .text-center
+    %ul.pagination.pagination-lg
+      %li.disabled
+        %a(href="#") &laquo;
+      %li
+        %a(href="#")
+          1
+          %span.sr-only (目前的頁面)
+      %li
+        %a(href="#")
+          2
+      %li
+        %a(href="#")
+          3
+      %li
+        %a(href="#")
+          4
+      %li
+        %a(href="#")
+          5
+      %li
+        %a(href="#") &raquo;

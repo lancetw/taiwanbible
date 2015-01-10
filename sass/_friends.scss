@@ -1,0 +1,86 @@
+#friends {
+
+  .panel {
+    border: 1px solid rgba($twb-read, .1);
+  }
+
+  .panel-body {
+    @include font-size(24px);
+    color: rgba($twb-read, .9);
+  }
+
+  .ctrl {
+    font-weight: bold;
+    .btn {
+      margin-right: 7px;
+    }
+  }
+
+  .paper {
+    @include font-size(24px);
+    color: rgba($twb-read, .9);
+    line-height: 2.1;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    padding: 12px;
+    margin: 12px;
+  }
+
+  .img-avatar {
+    background: rgba($twb-white, .5);
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 2px solid #EEE;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .date {
+    text-align: right;
+    @include font-size(22px);
+    color: rgba($twb-grey, .9);
+    padding-right: 5px;
+  }
+
+  .readed {
+    @include font-size(22px);
+    color: rgba($twb-grey, .9);
+  }
+
+
+  .actions {
+    @include noList;
+    li {
+      margin-left: 0;
+    }
+    .img-avatar {
+      margin: 20px;
+      background: rgba($twb-white, .5);
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      border: 2px solid #EEE;
+      overflow: hidden;
+    }
+  }
+
+
+ }
+
+.list-group.firends {
+  padding: 12px;
+  .list-group-item {
+    padding: 2px;
+  }
+
+  .img-avatar {
+    background: rgba($twb-white, .5);
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 2px solid #EEE;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}

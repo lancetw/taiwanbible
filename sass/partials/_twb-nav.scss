@@ -4,9 +4,6 @@
   margin-right: -16px;
 
   @include with-layout(2) {
-    h2 {
-
-    }
     ul {
       margin-top: 12px;
       @include font-size(28px);
@@ -27,8 +24,8 @@
       & > li:first-child {
         @include font-size(42px);
         margin-top: -15px;
-
       }
+
     }
   }
 

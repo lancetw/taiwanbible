@@ -12,9 +12,10 @@
   .twb-box
     .panel.panel-default
       .panel-heading
-        %h2 葉子飛 的靈修日記
-        .img-avatar
-          %img(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20140610-1402365193045.jpg&Size=150")
+        %a(href="/friends/who.html")
+          %h2 葉子飛 的靈修日記
+        %a(href="/friends/who.html")
+          %img.img-avatar(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20140610-1402365193045.jpg&Size=150")
       .panel-verse
         %p
           :erb
@@ -37,9 +38,10 @@
   .twb-box
     .panel.panel-default
       .panel-heading
-        %h2 乘以幾 的靈修日記
-        .img-avatar
-          %img(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20140418-1397783786838.JPG&Size=150")
+        %a(href="/friends/who.html")
+          %h2 乘以幾 的靈修日記
+        %a(href="/friends/who.html")
+          %img.img-avatar(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20140418-1397783786838.JPG&Size=150")
       .panel-verse
         %p
           :erb
@@ -89,9 +91,10 @@
   .twb-box
     .panel.panel-default
       .panel-heading
-        %h2 sujan 的靈修日記
-        .img-avatar
-          %img(src="http://www.taiwanbible.com/web/main/27.gif")
+        %a(href="/friends/who.html")
+          %h2 sujan 的靈修日記
+        %a(href="/friends/who.html")
+          %img.img-avatar(src="http://www.taiwanbible.com/web/main/27.gif")
       .panel-verse
         %p
           :erb
@@ -120,3 +123,26 @@
             </p><p>
             因為隨從肉體的人體貼肉體的事，隨從聖靈的人體貼聖靈的事。體貼肉體的，就是死；體貼聖靈的，乃是生命平安。(羅8:5-6)
             </p>
+
+
+  %ul.pagination.pagination-lg
+    %li.disabled
+      %a(href="#") &laquo;
+    %li
+      %a(href="#")
+        1
+        %span.sr-only (目前的頁面)
+    %li
+      %a(href="#")
+        2
+    %li
+      %a(href="#")
+        3
+    %li
+      %a(href="#")
+        4
+    %li
+      %a(href="#")
+        5
+    %li
+      %a(href="#") &raquo;

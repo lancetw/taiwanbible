@@ -1,4 +1,5 @@
 !!! 5
+- logined = false
 = render :partial => "/templates/iehack"
 %html.no-js(lang="zh-tw" ng-app)
   %head
@@ -13,7 +14,10 @@
         = render :partial => "/templates/sidebar"
         %main
           = yield
-        = render :partial => "/templates/userpanel"
+        - if logined
+          = render :partial => "/templates/userpanel"
+        - else
+          = render :partial => "/templates/loginpanel"
     = render :partial => "/templates/footer"
     = render :partial => "/templates/script"
 

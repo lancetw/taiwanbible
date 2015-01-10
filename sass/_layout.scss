@@ -21,12 +21,14 @@ header, footer {
 }
 
 aside.left, main, aside.right {
-  @include transition (all 200ms ease-in-out);
+  @include transition (all 450ms ease-in-out);
+  @include translateZ(0);
+  @include backface-visibility(hidden);
+  @include perspective(1000);
   padding-top: 12px;
 }
 
 aside.left {
-  @include transform(rotate3d(0, 0, 0, 0));
   @include span($mobile-columns);
   margin-left: - span($mobile-columns);
   .show-left & {
@@ -35,14 +37,12 @@ aside.left {
 }
 
 main {
-  @include transform(rotate3d(0, 0, 0, 0));
   @include span($mobile-columns);
   margin-right: - span($mobile-columns);
   .show-right & { margin-left: - span($mobile-columns); }
 }
 
 aside.right {
-  @include transform(rotate3d(0, 0, 0, 0));
   @include span($mobile-columns last);
   margin-right: -100%;
   .show-left & { margin-right: - span($mobile-columns) * 2; }
@@ -56,7 +56,9 @@ aside.right {
 @include susy-breakpoint($tablet-bp, $tablet) {
 
   [href="#left"] { visibility: hidden; }
-
+  .show-left {
+    [href="#left"] { visibility: visible; }
+  }
   aside.left {
     @include span(3);
     margin-left: 0;
@@ -89,10 +91,14 @@ aside.right {
 @include susy-breakpoint($desktop-bp, $desktop) {
 
   [href="#right"] { visibility: hidden; }
-
+  .show-left {
+    [href="#left"] { visibility: hidden; }
+  }
   aside.left {
     @include span(3);
-    .show-right & { margin-left: 0; }
+    .show-right & {
+      margin-left: 0;
+    }
   }
   main {
     @include span(6);
@@ -104,6 +110,9 @@ aside.right {
   aside.right {
     margin-right: 0;
     @include span(3 last);
+    .show-left & {
+      margin-right: 0;
+    }
   }
 }
 

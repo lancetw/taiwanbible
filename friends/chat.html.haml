@@ -1,0 +1,92 @@
+- content_for(:title, '朋友')
+- content_for(:bodyClass, 'scrollToContent')
+
+#friends
+  %h2.text-center 對話紀錄
+  .panel.panel-default
+    .panel-body
+      %p.text-center 註一：對話紀錄僅會保留一年。請自行備份重要紀錄。
+      %p.text-center 註二：如收文者選擇刪除發言，此區將不會再顯示。
+
+  .msg
+    .paper.paper-white
+      %a(href="who.html")
+        %img.img-avatar.pull-left(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20131023-1382472018183.jpg&Size=150")
+
+      %h3
+        你對
+        %a(href="who.html") 黑熊
+        說：
+      %hr
+      %p.date 2014.07.29
+      %p
+        = zh_lorem_paragraphs(1 + rand(1))
+      .readed
+        （好友已讀取）
+      %hr
+      .ctrl
+        %a.btn.btn-default.pull-right.clearfix 刪除
+        %a.btn.btn-primary(href="msg.html") 傳訊
+        %a.btn.btn-success(href="sticons.html") 動作
+
+  .msg
+    .paper.paper-white
+      %a(href="who.html")
+        %img.img-avatar.pull-left(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20090317-1237252612796.jpg&Size=800")
+
+      %h3
+        %a(href="who.html") 黑熊
+        說：
+      %hr
+      %p.date 2014.07.29
+      %p
+        %img(src="http://www.taiwanbible.com/web/main/action6.png")
+      .readed
+        （好友已讀取）
+      %hr
+      .ctrl
+        %a.btn.btn-default.pull-right.clearfix 刪除
+        %a.btn.btn-primary(href="msg.html") 傳訊
+        %a.btn.btn-success(href="sticons.html") 動作
+  .msg
+    .paper.paper-white
+      %a(href="who.html")
+        %img.img-avatar.pull-left(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20090317-1237252612796.jpg&Size=800")
+
+      %h3
+        %a(href="who.html") 黑熊
+        說：
+      %hr
+      %p.date 2014.07.29
+      %p
+        = zh_lorem_paragraphs(1 + rand(1))
+      .readed
+        （好友已讀取）
+      %hr
+      .ctrl
+        %a.btn.btn-default.pull-right.clearfix 刪除
+        %a.btn.btn-primary(href="msg.html") 傳訊
+        %a.btn.btn-success(href="sticons.html") 動作
+
+  .text-center
+    %ul.pagination.pagination-lg
+      %li.disabled
+        %a(href="#") &laquo;
+      %li
+        %a(href="#")
+          1
+          %span.sr-only (目前的頁面)
+      %li
+        %a(href="#")
+          2
+      %li
+        %a(href="#")
+          3
+      %li
+        %a(href="#")
+          4
+      %li
+        %a(href="#")
+          5
+      %li
+        %a(href="#") &raquo;

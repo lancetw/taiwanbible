@@ -1,0 +1,42 @@
+#wiki-new
+  %h3.text-center
+    .label.label-info 我要發問
+  %hr
+  %h4
+    .label.label-info 問題標題
+  %input.form-control
+  %br
+  %h4
+    .label.label-info 您的問題
+  %textarea.form-control(rows="5")
+  %hr
+  %h4 問題分類
+  %select.form-control(name="CatID")
+    %option(value="0") 基督教教義
+    %option(value="1") 聖經新舊約
+    %option(value="2") 歷史、節慶、習俗
+    %option(value="3") 詩歌、個人靈修
+    %option(value="4") 教會、基督教機構
+    %option(value="5") 個人心理
+    %option(value="6") 其他宗教相關
+    %option(value="7") 其他問題
+  %hr
+  %h4 關鍵字
+  %input.form-control(placeholder="關鍵字 #1")
+  %input.form-control(placeholder="關鍵字 #2")
+  %input.form-control(placeholder="關鍵字 #3")
+  %input.form-control(placeholder="關鍵字 #4")
+  %input.form-control(placeholder="關鍵字 #5")
+  %input.form-control(placeholder="關鍵字 #6")
+  %small.badge.alert-info ※請替您的問題下關鍵字，最多六組
+  %hr
+  %p.text-center
+    %input(type="checkbox" name="EmailMe" checked)
+    %label.label.label-warning 當有人回答時，請EMAIL通知我
+  %hr
+  %h4 是否匿名？
+  %p.text-center
+    %input(type="checkbox" name="public" checked data-size="large" data-on-text="公開" data-off-text="匿名")
+  %small.badge.alert-info ※匿名發問會扣 5 點靈糧點數
+  %hr
+  %a.btn.btn-primary.btn-lg.btn-block 確認送出問題

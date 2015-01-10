@@ -1,11 +1,9 @@
-- site_title = "台灣聖經網行動版"
-
 -# ====================================================================
 -# Head
 -# ====================================================================
 %meta(charset="utf-8")
 %meta(http-equiv="X-UA-Compatible" content="IE=edge")
-%title= "#{site_title}"
+%title= "台灣聖經網行動版"
 %meta(name="description" content="這是一個基督教的社群網站，包含個人化讀經、靈修、聖經知識、全網查經、禱告廣場、見證、金句、詩歌、聖經部落格、社群、基督教新聞、活動、聖經遊戲、軟體下載、信徒線上工具等等...")
 %meta(name="keywords" content="")
 %meta(name="author" content="台灣聖經網：lancetw aka Hsin-lin Cheng, 2014")
@@ -18,7 +16,7 @@
 -# iOS web app
 %meta(name="apple-mobile-web-app-capable" content="yes")
 %meta(name="apple-mobile-web-app-status-bar-style" content="black")
-%meta(name="apple-mobile-web-app-title" content="#{site_title}")
+%meta(name="apple-mobile-web-app-title" content="台灣聖經網")
 -# %link{:rel => "apple-touch-startup-image", :href => "/img/touch/startup.png"}
 -# RSS
 -# ====================================================================
@@ -26,24 +24,26 @@
 -# Favicon
 -# ====================================================================
 -# iPad 3 Retina Display
--# %link(rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png")
+%link(rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/touch/AppIcon72x72@2x~ipad.png")
 -# iPhone 4 Retina display
--# %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png")
+%link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/touch/AppIcon72x72@2x~ipad.png")
 -# iPad non-Retina display
--# %link(rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png")
--# %link(rel="shortcut icon" href="img/touch/apple-touch-icon.png")
+%link(rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/touch/AppIcon72x72@2x~ipad.png")
+%link(rel="shortcut icon" href="/img/touch/AppIcon72x72@2x~ipad.png")
 -# Non-Retina iPhone, iPod Touch, Android 2.1+
--# %link(rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png")
+%link(rel="apple-touch-icon-precomposed" href="/img/touch/AppIcon72x72@2x~ipad.png")
 -# Nokia
--# %link(rel="shortcut icon" href="/img/touch/apple-touch-icon.png")
+%link(rel="shortcut icon" href="/img/touch/AppIcon72x72@2x~ipad.png")
 -# Tile icon for Win8 (144x144 + tile color)
--# %meta(name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png")
+%meta(name="msapplication-TileImage" content="/img/touch/AppIcon72x72@2x~ipad.png")
 -# %meta(name="msapplication-TileColor" content="#222222")
 -# SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page
 %link(rel="canonical" href="http://www.taiwanbible.com/")
 -# CSS
 -# ====================================================================
 %link(rel="stylesheet" media="screen" href="/css/screen.css")
+/%link(rel="stylesheet" media="screen" href="/libs/cubiq-add-to-homescreen/style/add2home.css")
+
 -# %link{:rel => "stylesheet", :media => "only screen and (min-width: 45em)", :href => "/css/widescreen.css"}
 -# IE Fixes
 -# ====================================================================
@@ -69,3 +69,4 @@
 -# try{Typekit.load();}catch(e){}
 -# Modernizr
 %script(src="/libs/modernizr/modernizr.js")
+/%script(src="/libs/cubiq-add-to-homescreen/src/add2home.min.js")

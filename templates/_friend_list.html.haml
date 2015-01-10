@@ -1,0 +1,6 @@
+%h2.text-center 好友列表
+.list-group.firends
+  - (1..8).each do |i|
+    %a.list-group-item(href="who.html")
+      %img.img-avatar(src="http://placekitten.com/100/10#{i}")
+      =zh_lorem_name

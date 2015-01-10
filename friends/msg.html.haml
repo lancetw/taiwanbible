@@ -1,0 +1,29 @@
+- content_for(:title, '傳送訊息')
+- content_for(:bodyClass, 'scrollToContent')
+
+#friends
+  %h2.text-center 傳送訊息
+
+  .msg
+    .paper.paper-white
+      %a(href="who.html")
+        %img.img-avatar.pull-right(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20090317-1237252612796.jpg&Size=800")
+      %h3
+        我想對
+        %a(href="who.html") 黑熊
+        說：
+      %hr
+
+      %textarea.form-control(rows="5")
+
+      %hr
+
+      %p.text-center
+        %input(type="checkbox" name="public" checked data-size="large" data-on-text="公開" data-off-text="隱藏")
+
+      %hr
+
+      .ctrl
+        %a.btn.btn-default.pull-right.clearfix 取消
+        %a.btn.btn-primary 傳送訊息
+        %a.btn.btn-success.pull-right.clearfix(href="sticons.html") 改傳動作

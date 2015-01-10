@@ -67,6 +67,14 @@ $color-type-4: hsla(0, 100%, 70%, 1);
     background: rgba($twb-white, .9);
   }
 
+  .panel-img {
+    background: rgba($twb-dark, .9);
+    text-align: center;
+    img {
+      margin: 0 auto;
+    }
+  }
+
   .panel-footer {
     @include font-size(22px);
     border-top: none;

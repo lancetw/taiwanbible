@@ -1,0 +1,26 @@
+- content_for(:title, '傳送動作')
+- content_for(:bodyClass, 'scrollToContent')
+
+#friends
+  %h2.text-center 傳送動作
+
+  .msg
+    .paper.paper-white
+      %a(href="who.html")
+        %img.img-avatar.pull-right(src="http://v.taiwanbible.com/taiwanbible/main/image.jsp?FileName=20090317-1237252612796.jpg&Size=800")
+      %h3
+        傳送動作給
+        %a(href="who.html") 黑熊
+        ：
+      %hr
+
+      .actions.text-center
+        - (1..12).each do |i|
+          %a(href="#")
+            %img.img-avatar(src="http://www.taiwanbible.com/web/main/action#{i}.png")
+      %hr
+
+      .ctrl
+        %a.btn.btn-default.pull-right.clearfix 取消
+        %a.btn.btn-success 傳送動作
+        %a.btn.btn-primary.pull-right.clearfix(href="msg.html") 改傳訊息

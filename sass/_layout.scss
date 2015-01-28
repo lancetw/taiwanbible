@@ -46,7 +46,7 @@ header, footer {
 
 aside.left, main, aside.right {
   padding-top: 12px;
-  @include transition (all 200ms ease-in-out);
+  @include transition (all 250ms ease-in-out);
   @include translateZ(0);
   @include backface-visibility(hidden);
   @include perspective(1000);

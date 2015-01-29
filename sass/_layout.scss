@@ -12,7 +12,8 @@
   }
 
 }
-@keyframes hinge {
+
+/*@keyframes hinge {
     0% {
         animation-timing-function: ease-in-out;
         transform: rotate(-120deg);
@@ -35,7 +36,7 @@
         animation-timing-function: ease-in;
         transform: rotate(0deg) translateY(200%);
     }
-}
+}*/
 
 header, footer {
   @include clearfix;
@@ -46,7 +47,7 @@ header, footer {
 
 aside.left, main, aside.right {
   padding-top: 12px;
-  @include transition (all 250ms ease-in-out);
+  @include transition (all .4s ease 0s);
   @include translateZ(0);
   @include backface-visibility(hidden);
   @include perspective(1000);

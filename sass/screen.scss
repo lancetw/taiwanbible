@@ -60,6 +60,7 @@ h2 {
 body {
   color: $twb-text;
   @include font-size(28px);
+  background: $twb-sub;
 }
 
 a {

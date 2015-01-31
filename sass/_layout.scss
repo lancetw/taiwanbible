@@ -13,31 +13,6 @@
 
 }
 
-/*@keyframes hinge {
-    0% {
-        animation-timing-function: ease-in-out;
-        transform: rotate(-120deg);
-        transform-origin: top left;
-    }
-
-    25% {
-        animation-timing-function: ease-in-out;
-        transform: rotate(70deg);
-        transform-origin: top left;
-    }
-
-    50% {
-        animation-timing-function: ease-in-out;
-        transform: rotate(-120deg);
-        transform-origin: top left;
-    }
-
-    100% {
-        animation-timing-function: ease-in;
-        transform: rotate(0deg) translateY(200%);
-    }
-}*/
-
 header, footer {
   @include clearfix;
   clear: both;
